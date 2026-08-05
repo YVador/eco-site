@@ -1,0 +1,137 @@
+[
+  {
+    "route": "/",
+    "file": "01-accueil.png",
+    "ok": true
+  },
+  {
+    "route": "/solutions",
+    "file": "02-solutions.png",
+    "ok": true
+  },
+  {
+    "route": "/solutions/prise-en-charge-cee",
+    "file": "03-solutions__prise-en-charge-cee.png",
+    "ok": true
+  },
+  {
+    "route": "/solutions/mandat-administratif",
+    "file": "04-solutions__mandat-administratif.png",
+    "ok": true
+  },
+  {
+    "route": "/solutions/mandat-financier",
+    "file": "05-solutions__mandat-financier.png",
+    "ok": true
+  },
+  {
+    "route": "/solutions/delegation-cee",
+    "file": "06-solutions__delegation-cee.png",
+    "ok": true
+  },
+  {
+    "route": "/solutions/accompagnement-administratif",
+    "file": "07-solutions__accompagnement-administratif.png",
+    "ok": true
+  },
+  {
+    "route": "/solutions/verification-documentaire",
+    "file": "08-solutions__verification-documentaire.png",
+    "ok": true
+  },
+  {
+    "route": "/pour-qui/entreprises-emettrices",
+    "file": "09-pour-qui__entreprises-emettrices.png",
+    "ok": true
+  },
+  {
+    "route": "/pour-qui/fournisseurs-energie",
+    "file": "10-pour-qui__fournisseurs-energie.png",
+    "ok": true
+  },
+  {
+    "route": "/pour-qui/collectivites",
+    "file": "11-pour-qui__collectivites.png",
+    "ok": true
+  },
+  {
+    "route": "/pour-qui/bailleurs-sociaux",
+    "file": "12-pour-qui__bailleurs-sociaux.png",
+    "ok": true
+  },
+  {
+    "route": "/pour-qui/installateurs-artisans",
+    "file": "13-pour-qui__installateurs-artisans.png",
+    "ok": true
+  },
+  {
+    "route": "/pour-qui/particuliers",
+    "file": "14-pour-qui__particuliers.png",
+    "ok": true
+  },
+  {
+    "route": "/simulation",
+    "file": "15-simulation.png",
+    "ok": true
+  },
+  {
+    "route": "/guides",
+    "file": "16-guides.png",
+    "ok": true
+  },
+  {
+    "route": "/guides/quest-ce-quun-cee",
+    "file": "17-guides__quest-ce-quun-cee.png",
+    "ok": true
+  },
+  {
+    "route": "/guides/mandataire-cee-maprimerenov",
+    "file": "18-guides__mandataire-cee-maprimerenov.png",
+    "ok": true
+  },
+  {
+    "route": "/guides/valoriser-ses-cee",
+    "file": "19-guides__valoriser-ses-cee.png",
+    "ok": true
+  },
+  {
+    "route": "/certifications",
+    "file": "20-certifications.png",
+    "ok": true
+  },
+  {
+    "route": "/coup-de-pouce",
+    "file": "21-coup-de-pouce.png",
+    "ok": true
+  },
+  {
+    "route": "/a-propos",
+    "file": "22-a-propos.png",
+    "ok": true
+  },
+  {
+    "route": "/realisations",
+    "file": "23-realisations.png",
+    "ok": true
+  },
+  {
+    "route": "/contact",
+    "file": "24-contact.png",
+    "ok": true
+  },
+  {
+    "route": "/mentions-legales",
+    "file": "25-mentions-legales.png",
+    "ok": true
+  },
+  {
+    "route": "/confidentialite",
+    "file": "26-confidentialite.png",
+    "ok": true
+  },
+  {
+    "route": "/cookies",
+    "file": "27-cookies.png",
+    "ok": true
+  }
+]
