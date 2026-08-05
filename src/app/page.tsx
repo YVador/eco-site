@@ -92,7 +92,7 @@ export default function HomePage() {
       <section className="relative min-h-[calc(100svh-4rem)] overflow-hidden text-white">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=2200&q=80"
+            src="/media/hero.jpg"
             alt="Transition énergétique et bâtiments éco-responsables"
             fill
             priority
@@ -132,15 +132,23 @@ export default function HomePage() {
             </li>
           </ul>
           <div className="fade-up-delay-3 mt-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <Link href="/solutions" className="btn btn-cta text-base px-8 py-4">
-              Nos solutions
+            <Link href="/contact" className="btn btn-cta text-base px-8 py-4">
+              Un expert vous rappelle
             </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-medium text-white/75 transition hover:text-white"
-            >
-              Contactez-nous →
-            </Link>
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-5">
+              <Link
+                href="/solutions"
+                className="text-sm font-medium text-white/75 transition hover:text-white"
+              >
+                Nos solutions →
+              </Link>
+              <a
+                href={site.phoneHref}
+                className="text-sm font-semibold text-cta transition hover:brightness-110"
+              >
+                Appeler {site.phoneDisplay}
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -451,15 +459,15 @@ export default function HomePage() {
               CEE.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <Link href="/simulation" className="btn btn-cta">
-                Demander votre simulation
+              <Link href="/contact" className="btn btn-cta">
+                Un expert vous rappelle
               </Link>
-              <Link
-                href="/contact"
+              <a
+                href={site.phoneHref}
                 className="text-white/75 transition hover:text-cta"
               >
-                ou écrire à {site.email}
-              </Link>
+                ou appeler le {site.phoneDisplay}
+              </a>
             </div>
           </Reveal>
         </div>

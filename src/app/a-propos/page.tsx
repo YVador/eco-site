@@ -31,7 +31,7 @@ export default function AboutPage() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] bg-bg-muted">
             <Image
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+              src="/media/atelier.jpg"
               alt="Équipe ECO INGENIERIE"
               fill
               className="object-cover"
@@ -69,7 +69,7 @@ export default function AboutPage() {
             Contactez-nous
           </Link>
           <p className="mt-6 text-sm text-text-muted">
-            {site.address} · {site.email} · {site.hours}
+            {site.phoneDisplay} · {site.email} · {site.hours}
           </p>
         </div>
       </section>

@@ -21,6 +21,17 @@ export default function ContactPage() {
           </p>
           <dl className="mt-8 space-y-3 text-sm">
             <div>
+              <dt className="text-text-muted">Téléphone</dt>
+              <dd>
+                <a
+                  href={site.phoneHref}
+                  className="text-lg font-medium text-accent"
+                >
+                  {site.phoneDisplay}
+                </a>
+              </dd>
+            </div>
+            <div>
               <dt className="text-text-muted">Email</dt>
               <dd>
                 <a
@@ -40,12 +51,21 @@ export default function ContactPage() {
               <dd>{site.address}</dd>
             </div>
           </dl>
-          <Link href="/simulation" className="mt-8 inline-block text-sm text-accent underline">
-            Préférer la simulation guidée →
-          </Link>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/contact#formulaire" className="btn btn-cta">
+              Un expert vous rappelle
+            </Link>
+            <Link href="/simulation" className="btn btn-ghost">
+              Simulation guidée
+            </Link>
+          </div>
         </div>
 
-        <form className="rounded-[var(--radius-lg)] border border-border bg-surface p-6 md:p-8" action="#">
+        <form
+          id="formulaire"
+          className="rounded-[var(--radius-lg)] border border-border bg-surface p-6 md:p-8"
+          action="#"
+        >
           <div className="grid gap-4">
             <Field id="name" label="Nom" required />
             <Field id="email" label="Email" type="email" required />

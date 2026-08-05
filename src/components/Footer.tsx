@@ -2,12 +2,6 @@ import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { audiences, site } from "@/data/site";
 
-const socials = [
-  { label: "Facebook", href: "https://facebook.com" },
-  { label: "Twitter", href: "https://twitter.com" },
-  { label: "YouTube", href: "https://youtube.com" },
-];
-
 const certs = ["ISO 9001", "COFRAC", "CEE", "MaPrimeRénov’"];
 
 export function Footer() {
@@ -23,7 +17,7 @@ export function Footer() {
             énergétique, conformité et primes accélérées.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
-            {socials.map((s) => (
+            {site.socials.map((s) => (
               <a
                 key={s.label}
                 href={s.href}
@@ -48,24 +42,16 @@ export function Footer() {
         </div>
 
         <div className="lg:col-span-2">
-          <p className="text-sm font-semibold tracking-wide">Pour qui</p>
-          <ul className="mt-4 space-y-2.5 text-sm text-white/65">
-            {audiences.slice(0, 5).map((u) => (
-              <li key={u.slug}>
-                <Link href={`/pour-qui/${u.slug}`} className="transition hover:text-cta">
-                  {u.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="lg:col-span-2">
-          <p className="text-sm font-semibold tracking-wide">Ressources</p>
+          <p className="text-sm font-semibold tracking-wide">Navigation</p>
           <ul className="mt-4 space-y-2.5 text-sm text-white/65">
             <li>
-              <Link href="/solutions" className="transition hover:text-cta">
-                Solutions
+              <Link href="/" className="transition hover:text-cta">
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link href="/coup-de-pouce" className="transition hover:text-cta">
+                Coup de pouce
               </Link>
             </li>
             <li>
@@ -79,45 +65,48 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/coup-de-pouce" className="transition hover:text-cta">
-                Coup de pouce
-              </Link>
-            </li>
-            <li>
-              <Link href="/simulation" className="transition hover:text-cta">
-                Simulation
+              <Link href="/contact" className="transition hover:text-cta">
+                Contact
               </Link>
             </li>
           </ul>
         </div>
 
+        <div className="lg:col-span-2">
+          <p className="text-sm font-semibold tracking-wide">Pour qui</p>
+          <ul className="mt-4 space-y-2.5 text-sm text-white/65">
+            {audiences.slice(0, 5).map((u) => (
+              <li key={u.slug}>
+                <Link href={`/pour-qui/${u.slug}`} className="transition hover:text-cta">
+                  {u.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div className="lg:col-span-4">
-          <p className="text-sm font-semibold tracking-wide">Newsletter</p>
+          <p className="text-sm font-semibold tracking-wide">Un expert vous rappelle</p>
           <p className="mt-3 text-sm text-white/65">
-            Veille CEE et actualités de la transition énergétique.
+            Simulation, dossier CEE ou MaPrimeRénov’ — on vous recontacte rapidement.
           </p>
-          <form className="mt-4 flex gap-2" action="/contact" method="get">
-            <label className="sr-only" htmlFor="newsletter-email">
-              Email
-            </label>
-            <input
-              id="newsletter-email"
-              name="email"
-              type="email"
-              required
-              placeholder="votre@email.fr"
-              className="min-w-0 flex-1 rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35 outline-none focus:border-cta"
-            />
-            <button type="submit" className="btn btn-cta px-5 py-3">
-              OK
-            </button>
-          </form>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href="/contact" className="btn btn-cta px-5 py-3">
+              Être rappelé
+            </Link>
+            <a href={site.phoneHref} className="btn btn-ghost border-white/20 px-5 py-3">
+              {site.phoneDisplay}
+            </a>
+          </div>
 
           <div className="mt-8 grid gap-1 text-sm text-white/65">
             <p className="font-medium text-white">Coordonnées</p>
             <p>{site.address}</p>
             <a href={`mailto:${site.email}`} className="transition hover:text-cta">
               {site.email}
+            </a>
+            <a href={site.phoneHref} className="transition hover:text-cta">
+              {site.phoneDisplay}
             </a>
             <p>{site.hours}</p>
           </div>

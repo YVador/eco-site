@@ -3,11 +3,23 @@ export const site = {
   shortName: "ECO INGENIERIE",
   tagline: "Unis dans la mission d’une transition énergétique rapide",
   email: "contact@eco-ingenierie.fr",
-  phone: "Contactez-nous",
-  phoneHref: "mailto:contact@eco-ingenierie.fr",
+  phone: "06 52 39 03 06",
+  phoneHref: "tel:+33652390306",
+  phoneDisplay: "06 52 39 03 06",
   address: "10 Rue de Penthièvre, Paris 8ème",
   hours: "10:00 – 20:00",
   url: "https://eco-ingenierie.fr",
+  socials: [
+    // À remplacer par les URLs exactes du compte ECO INGENIERIE quand confirmées
+    {
+      label: "Facebook",
+      href: "https://www.facebook.com/search/top?q=ECO%20INGENIERIE",
+    },
+    {
+      label: "YouTube",
+      href: "https://www.youtube.com/results?search_query=ECO+INGENIERIE",
+    },
+  ],
 } as const;
 
 export const trustItems = [
@@ -27,8 +39,7 @@ export const audiences = [
     description:
       "Investissez dans des projets éco-responsables et valorisez vos CEE plutôt que de subir une taxe carbone.",
     icon: "ev" as const,
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+    image: "/media/audience-entreprise.jpg",
   },
   {
     slug: "fournisseurs-energie",
@@ -36,8 +47,7 @@ export const audiences = [
     description:
       "Obligés : remplissez vos obligations en soutenant des travaux d’économies d’énergie.",
     icon: "solar" as const,
-    image:
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=80",
+    image: "/media/audience-energie.jpg",
   },
   {
     slug: "collectivites",
@@ -45,8 +55,7 @@ export const audiences = [
     description:
       "Rénovez bâtiments et infrastructures et maximisez la valorisation de vos CEE.",
     icon: "badge" as const,
-    image:
-      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1400&q=80",
+    image: "/media/audience-collectivite.jpg",
   },
   {
     slug: "bailleurs-sociaux",
@@ -54,8 +63,7 @@ export const audiences = [
     description:
       "Réalisez des économies sur vos parcs immobiliers grâce à la rénovation énergétique.",
     icon: "shield" as const,
-    image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1400&q=80",
+    image: "/media/audience-bailleur.jpg",
   },
   {
     slug: "installateurs-artisans",
@@ -63,8 +71,7 @@ export const audiences = [
     description:
       "Simplifiez la gestion administrative des CEE pour vous et vos clients.",
     icon: "check" as const,
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1400&q=80",
+    image: "/media/audience-artisan.jpg",
   },
   {
     slug: "particuliers",
@@ -72,13 +79,21 @@ export const audiences = [
     description:
       "Comprenez et valorisez vos aides CEE / MaPrimeRénov’ pour vos travaux.",
     icon: "van" as const,
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1400&q=80",
+    image: "/media/audience-particulier.jpg",
   },
 ] as const;
 
 /** alias for components still expecting `usages` shape */
 export const usages = audiences;
+
+export const clientSectors = [
+  { name: "Entreprises tertiaires", tag: "Émetteurs" },
+  { name: "Fournisseurs d’énergie", tag: "Obligés" },
+  { name: "Collectivités locales", tag: "Public" },
+  { name: "Bailleurs sociaux", tag: "Habitat" },
+  { name: "Installateurs RGE", tag: "Artisans" },
+  { name: "Particuliers", tag: "Résidentiel" },
+] as const;
 
 export const guides = [
   {
@@ -88,8 +103,7 @@ export const guides = [
       "Le Certificat d’Économies d’Énergie : définition, rôle et enjeux de la rénovation.",
     readTime: "4 min",
     category: "Comprendre",
-    image:
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=80",
+    image: "/media/guide-cee.jpg",
   },
   {
     slug: "mandataire-cee-maprimerenov",
@@ -98,8 +112,7 @@ export const guides = [
       "Administratif et financier : comment ECO INGENIERIE avance les aides et sécurise vos dossiers.",
     readTime: "5 min",
     category: "Rôle",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
+    image: "/media/guide-mandat.jpg",
   },
   {
     slug: "valoriser-ses-cee",
@@ -108,8 +121,7 @@ export const guides = [
       "Du dépôt à la prime : les étapes clés pour maximiser vos certificats.",
     readTime: "6 min",
     category: "Parcours",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=80",
+    image: "/media/guide-valorisation.jpg",
   },
 ] as const;
 
@@ -122,8 +134,7 @@ export const testimonials = [
     date: "2025",
     quote:
       "Grâce à ECO INGENIERIE, nous avons pu valoriser nos CEE sans tracas. Leur expertise et leur dévouement sont inégalés.",
-    photo:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+    photo: "/media/temoin-marie.jpg",
   },
   {
     name: "Lucas P.",
@@ -133,8 +144,7 @@ export const testimonials = [
     date: "2025",
     quote:
       "ECO INGENIERIE a simplifié le financement de mes chantiers. Leur support a été essentiel pour obtenir les éco-primes à temps.",
-    photo:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    photo: "/media/temoin-lucas.jpg",
   },
   {
     name: "Nathalie R.",
@@ -144,8 +154,7 @@ export const testimonials = [
     date: "2025",
     quote:
       "Ils nous ont guidés à chaque étape, assurant la conformité de nos dossiers. Une collaboration enrichissante.",
-    photo:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=80",
+    photo: "/media/temoin-nathalie.jpg",
   },
 ] as const;
 
@@ -181,43 +190,37 @@ export const timeline = [
     step: "01",
     title: "Dépôt de demande",
     text: "Envoyez simplement votre demande de prise en charge à ECO INGENIERIE.",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    image: "/media/step-01.jpg",
   },
   {
     step: "02",
     title: "Prise de contact",
     text: "Votre interlocuteur dédié prend contact et se charge de votre dossier.",
-    image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80",
+    image: "/media/step-02.jpg",
   },
   {
     step: "03",
     title: "Envoi du dossier",
     text: "Dépôt de votre dossier CEE auprès de notre obligé.",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    image: "/media/step-03.jpg",
   },
   {
     step: "04",
     title: "Paiement de la prime",
     text: "Une fois la demande traitée, nous procédons au paiement rapide de la prime CEE.",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+    image: "/media/step-04.jpg",
   },
   {
     step: "05",
     title: "Suivi & conformité",
     text: "Contrôle documentaire, veille réglementaire et accompagnement jusqu’au bout.",
-    image:
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
+    image: "/media/step-05.jpg",
   },
   {
     step: "06",
     title: "Transition réussie",
     text: "Vos travaux éligibles valorisés, vos obligations honorées, votre projet accéléré.",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
+    image: "/media/step-06.jpg",
   },
 ] as const;
 

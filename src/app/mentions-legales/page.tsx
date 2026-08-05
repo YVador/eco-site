@@ -17,7 +17,7 @@ export default function Page() {
         8ème
       </p>
       <p>
-        <strong>Contact :</strong> contact@eco-ingenierie.fr
+        <strong>Contact :</strong> contact@eco-ingenierie.fr — 06 52 39 03 06
       </p>
       <p>
         <strong>Horaires :</strong> 10:00 – 20:00

@@ -1,45 +1,12 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import { clientSectors, site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Réalisations & partenaires",
+  title: "Nos clients",
   description:
-    "Clients et partenaires ECO INGENIERIE : entreprises, artisans, collectivités.",
+    "Clients ECO INGENIERIE : entreprises, obligés, collectivités, bailleurs, artisans et particuliers.",
 };
-
-const gallery = [
-  {
-    src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80",
-    alt: "Entreprise",
-    tag: "Tertiaire",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=80",
-    alt: "Artisan",
-    tag: "Artisans",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1000&q=80",
-    alt: "Collectivité",
-    tag: "Collectivités",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1000&q=80",
-    alt: "Habitat",
-    tag: "Bailleurs",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=80",
-    alt: "Énergie",
-    tag: "Obligés",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80",
-    alt: "Particuliers",
-    tag: "Particuliers",
-  },
-];
 
 export default function RealisationsPage() {
   return (
@@ -51,35 +18,43 @@ export default function RealisationsPage() {
             Au service de la transition énergétique
           </h1>
           <p className="mt-4 text-text-muted">
-            Grandes entreprises, artisans, collectivités et particuliers :
-            chaque client est au cœur de notre mission.
+            Grandes entreprises, artisans locaux, collectivités et particuliers :
+            chaque client est au cœur de notre mission — faciliter la transition
+            énergétique et maximiser la valeur des CEE.
           </p>
         </div>
       </section>
+
       <section className="section">
         <div className="container-site">
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
-            {gallery.map((item) => (
-              <figure
-                key={item.alt}
-                className="group relative aspect-square overflow-hidden rounded-[var(--radius)] bg-bg-muted"
+          <h2 className="font-display text-3xl md:text-4xl">
+            Secteurs accompagnés
+          </h2>
+          <p className="mt-3 max-w-2xl text-text-muted">
+            Remplacez cette grille par vos logos partenaires dès qu’ils sont
+            disponibles (`public/partners/`).
+          </p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {clientSectors.map((s) => (
+              <div
+                key={s.name}
+                className="flex min-h-[140px] flex-col justify-between rounded-[var(--radius-lg)] border border-border bg-surface p-6 transition hover:border-accent"
               >
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-[1.03]"
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg-inverse/80 to-transparent p-3 text-sm text-white">
-                  {item.tag}
-                </figcaption>
-              </figure>
+                <span className="text-xs font-semibold uppercase tracking-wider text-accent">
+                  {s.tag}
+                </span>
+                <p className="mt-6 font-display text-2xl">{s.name}</p>
+              </div>
             ))}
           </div>
-          <Link href="/contact" className="btn btn-cta mt-10">
-            Devenir partenaire
-          </Link>
+          <div className="mt-12 flex flex-wrap gap-3">
+            <Link href="/contact" className="btn btn-cta">
+              Devenir partenaire
+            </Link>
+            <a href={site.phoneHref} className="btn btn-ghost">
+              {site.phoneDisplay}
+            </a>
+          </div>
         </div>
       </section>
     </>
