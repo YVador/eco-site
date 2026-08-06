@@ -89,14 +89,21 @@ export default function HomePage() {
     <>
       <section className="relative min-h-[calc(100svh-4rem)] overflow-hidden text-white">
         <div className="absolute inset-0">
-          <Image
-            src="/media/hero.jpg"
-            alt="Transition énergétique et bâtiments éco-responsables"
-            fill
-            priority
-            className="hero-media object-cover object-center"
-            sizes="100vw"
-          />
+          <video
+            className="hero-media absolute inset-0 h-full w-full object-cover object-center"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster="/media/hero.jpg"
+            aria-hidden
+          >
+            <source
+              src="/media/AdobeStock_1554334214.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
         <div
           className="absolute inset-0 bg-[linear-gradient(105deg,rgba(10,18,16,0.92)_0%,rgba(10,18,16,0.72)_45%,rgba(10,18,16,0.35)_100%)]"
