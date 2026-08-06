@@ -103,8 +103,8 @@ export default async function GuidePage({ params }: Props) {
           ))}
         </div>
         <div className="mt-12 border-t border-border pt-8">
-          <Link href="/simulation" className="btn btn-cta">
-            Demander une simulation
+          <Link href="/demande" className="btn btn-cta">
+            Orienter ma demande
           </Link>
           <Link href="/guides" className="ml-4 text-sm text-text-muted underline">
             Tous les articles

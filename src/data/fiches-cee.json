@@ -1,0 +1,1642 @@
+[
+  {
+    "code": "AGRI-EQ-101",
+    "title": "Ordinateur climatique pour serre agricole",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Équipements",
+    "summary": "Ordinateur de gestion du climat en serre."
+  },
+  {
+    "code": "AGRI-EQ-102",
+    "title": "Régulation d'une installation de production de froid",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Équipements",
+    "summary": "Régulation avancée sur installation frigorifique agricole."
+  },
+  {
+    "code": "AGRI-EQ-103",
+    "title": "Variateur de vitesse sur pompe à vide (tank à lait)",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Équipements",
+    "summary": "Variateur sur pompe à vide en salle de traite."
+  },
+  {
+    "code": "AGRI-EQ-104",
+    "title": "Système de rafraîchissement adiabatique en élevage",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Équipements",
+    "summary": "Rafraîchissement adiabatique en bâtiment d'élevage."
+  },
+  {
+    "code": "AGRI-EQ-107",
+    "title": "Séchoir en grange à énergie renouvelable",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Équipements",
+    "summary": "Séchage en grange par ventilation renouvelable."
+  },
+  {
+    "code": "AGRI-EQ-108",
+    "title": "Équipement de banc d'essai tracteur",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Équipements",
+    "summary": "Banc d'essai tracteur pour optimisation moteur."
+  },
+  {
+    "code": "AGRI-TH-102",
+    "title": "Système de récupération de chaleur sur groupe de production de froid en agroalimentaire",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Thermique",
+    "summary": "Récupération sur groupes froids en agroalimentaire."
+  },
+  {
+    "code": "AGRI-TH-103",
+    "title": "Double paroi gonflable de serre agricole",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Thermique",
+    "summary": "Mise en place d'une double paroi gonflable ou d'un double film sur serre agricole chauffée."
+  },
+  {
+    "code": "AGRI-TH-105",
+    "title": "Pré-refroidisseur de lait",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Thermique",
+    "summary": "Pré-refroidisseur d'eau glacée sur circuit lait."
+  },
+  {
+    "code": "AGRI-TH-107",
+    "title": "Récupérateur de chaleur sur tank à lait",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Thermique",
+    "summary": "Récupération de chaleur sur tank à lait."
+  },
+  {
+    "code": "AGRI-TH-113",
+    "title": "Chaudière biomasse (agri)",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Thermique",
+    "summary": "Chaudière biomasse pour bâtiment agricole ou serre."
+  },
+  {
+    "code": "AGRI-TH-114",
+    "title": "Isolation des parois d'une serre",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Thermique",
+    "summary": "Écran thermique ou double paroi de serre chauffée."
+  },
+  {
+    "code": "AGRI-UT-103",
+    "title": "Système de gestion d'énergie en exploitation",
+    "sector": "Agriculture",
+    "family": "AGRI",
+    "category": "Utilités",
+    "summary": "Suivi énergétique multi-usages en exploitation."
+  },
+  {
+    "code": "BAR-EN-101",
+    "title": "Isolation des combles ou de toiture",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Isolation thermique des combles perdus ou aménagés ou de la toiture par l'extérieur."
+  },
+  {
+    "code": "BAR-EN-102",
+    "title": "Isolation des murs",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Isolation thermique des murs par l'intérieur (ITI) ou par l'extérieur (ITE)."
+  },
+  {
+    "code": "BAR-EN-103",
+    "title": "Isolation d'un plancher",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Isolation d'un plancher bas sur locaux non chauffés, vide sanitaire ou passage ouvert."
+  },
+  {
+    "code": "BAR-EN-104",
+    "title": "Fenêtre ou porte-fenêtre complète avec vitrage isolant",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Remplacement de menuiseries par double ou triple vitrage isolant."
+  },
+  {
+    "code": "BAR-EN-105",
+    "title": "Vitrage isolant sur menuiserie existante",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Pose de vitrages isolants sur menuiseries existantes en bon état."
+  },
+  {
+    "code": "BAR-EN-106",
+    "title": "Fermeture isolante",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Volets isolants extérieurs (roulants ou battants) sur baies existantes."
+  },
+  {
+    "code": "BAR-EN-107",
+    "title": "Isolation d'une toiture-terrasse",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Isolation par l'extérieur d'une toiture-terrasse."
+  },
+  {
+    "code": "BAR-EN-108",
+    "title": "Isolation d'un plafond de cave, sous-sol ou vide sanitaire",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Isolation du plafond de locaux non chauffés situés sous logement."
+  },
+  {
+    "code": "BAR-EN-109",
+    "title": "Réduction des apports solaires par la toiture — France d'Outre-mer",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Mise en œuvre d'une solution de réduction des apports solaires par la toiture en résidentiel en Outre-mer."
+  },
+  {
+    "code": "BAR-EN-110",
+    "title": "Fenêtre à vitrage pariétodynamique",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Enveloppe",
+    "summary": "Fenêtre à vitrage pariétodynamique valorisant l'air neuf pour préchauffer le logement."
+  },
+  {
+    "code": "BAR-EQ-110",
+    "title": "Luminaire à modules LED avec dispositif de contrôle pour les parties communes",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Équipements",
+    "summary": "Mise en place, dans les parties communes de bâtiments résidentiels, d'un luminaire à modules LED intégrant un dispositif de contrôle (détection de présence, gradation ou horloge)."
+  },
+  {
+    "code": "BAR-EQ-111",
+    "title": "Lave-linge économe en eau et énergie",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Équipements",
+    "summary": "Lave-linge classe A performante remplaçant un ancien modèle."
+  },
+  {
+    "code": "BAR-EQ-115",
+    "title": "Système de recharge pour véhicules électriques",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Équipements",
+    "summary": "Borne de recharge en logement résidentiel individuel ou collectif."
+  },
+  {
+    "code": "BAR-SE-101",
+    "title": "Conseil personnalisé sur les usages de l'énergie",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Services",
+    "summary": "Programme d'accompagnement des ménages aux économies d'énergie."
+  },
+  {
+    "code": "BAR-SE-103",
+    "title": "Service de suivi des consommations d'énergie",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Services",
+    "summary": "Service de suivi et pilotage des consommations en logement."
+  },
+  {
+    "code": "BAR-SE-104",
+    "title": "Équilibrage d'une installation de chauffage",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Services",
+    "summary": "Réglage des organes d'équilibrage d'un réseau collectif de chauffage à eau chaude pour répartir les débits et supprimer les inconforts."
+  },
+  {
+    "code": "BAR-SE-105",
+    "title": "Étude énergétique globale d'un logement individuel",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Services",
+    "summary": "Audit énergétique réglementaire préalable à travaux d'ampleur."
+  },
+  {
+    "code": "BAR-SE-106",
+    "title": "Étude énergétique d'un bâtiment collectif",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Services",
+    "summary": "Audit énergétique en copropriété."
+  },
+  {
+    "code": "BAR-SE-107",
+    "title": "Abaissement de la température de retour vers un réseau de chaleur",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Services",
+    "summary": "Optimisation d'une sous-station raccordée à un réseau de chaleur pour abaisser la température de retour."
+  },
+  {
+    "code": "BAR-SE-108",
+    "title": "Désembouage d'un réseau hydraulique de chauffage individuel",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Services",
+    "summary": "Désembouage curatif d'un réseau hydraulique de chauffage en maison individuelle."
+  },
+  {
+    "code": "BAR-SE-109",
+    "title": "Désembouage d'un réseau hydraulique collectif de chauffage",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Services",
+    "summary": "Désembouage d'un réseau hydraulique de chauffage collectif en immeuble d'habitation."
+  },
+  {
+    "code": "BAR-TH-101",
+    "title": "Chauffe-eau solaire individuel",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Installation d'un chauffe-eau solaire individuel (CESI) en France métropolitaine."
+  },
+  {
+    "code": "BAR-TH-104",
+    "title": "Pompe à chaleur de type air/eau ou eau/eau",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Installation d'une PAC air/eau ou eau/eau pour le chauffage et l'ECS d'une maison individuelle."
+  },
+  {
+    "code": "BAR-TH-106",
+    "title": "Chaudière individuelle à haute performance énergétique",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Remplacement par une chaudière gaz à condensation à haute performance (statut à vérifier selon arrêté)."
+  },
+  {
+    "code": "BAR-TH-107",
+    "title": "Chaudière collective à haute performance énergétique",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Chaudière collective HPE dans un immeuble d'habitation."
+  },
+  {
+    "code": "BAR-TH-107-SE",
+    "title": "Optimiseur de relance de chauffage collectif",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Système d'optimisation de la relance en chauffage collectif."
+  },
+  {
+    "code": "BAR-TH-108",
+    "title": "Régulation par sonde de température extérieure",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Installation d'une régulation avec sonde de température extérieure sur chaudière collective."
+  },
+  {
+    "code": "BAR-TH-109",
+    "title": "Robinet thermostatique",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Pose de robinets thermostatiques sur émetteurs de chauffage."
+  },
+  {
+    "code": "BAR-TH-110",
+    "title": "Programmateur d'intermittence",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Programmateur d'intermittence pour chauffage électrique ou hydraulique."
+  },
+  {
+    "code": "BAR-TH-111",
+    "title": "Chaudière biomasse individuelle",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Chaudière biomasse individuelle (bûches, granulés, plaquettes)."
+  },
+  {
+    "code": "BAR-TH-112",
+    "title": "Appareil indépendant de chauffage au bois",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Poêle, insert ou cuisinière bois à haute performance environnementale."
+  },
+  {
+    "code": "BAR-TH-113",
+    "title": "Chaudière biomasse collective",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Chaudière biomasse pour chauffage collectif d'immeuble."
+  },
+  {
+    "code": "BAR-TH-116",
+    "title": "Système de régulation par programmation d'intermittence",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Régulation par programmation d'intermittence sur chaudière individuelle."
+  },
+  {
+    "code": "BAR-TH-117",
+    "title": "Réducteur de pression sur alimentation d'eau froide",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Réduction de la pression d'eau froide pour limiter la consommation d'ECS."
+  },
+  {
+    "code": "BAR-TH-118",
+    "title": "Système hydro-économe",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Mitigeurs et pommeaux de douche hydro-économes en logement."
+  },
+  {
+    "code": "BAR-TH-121",
+    "title": "Pompe à chaleur de type air/air",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Installation d'une pompe à chaleur air/air en maison individuelle."
+  },
+  {
+    "code": "BAR-TH-122",
+    "title": "Récupérateur de chaleur à condensation sur conduit de fumées",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Récupérateur de chaleur à condensation installé sur le conduit de fumées d'une chaudière individuelle."
+  },
+  {
+    "code": "BAR-TH-123",
+    "title": "Chaudière collective haute performance sur boucle d'eau chaude",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Chaudière collective HPE sur boucle d'eau chaude en immeuble."
+  },
+  {
+    "code": "BAR-TH-124",
+    "title": "Chauffe-eau thermodynamique à accumulation",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Ballon d'eau chaude thermodynamique (COP ≥ 2,5)."
+  },
+  {
+    "code": "BAR-TH-125",
+    "title": "Système de ventilation mécanique double flux auto-réglable",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "VMC double flux auto-réglable en maison individuelle."
+  },
+  {
+    "code": "BAR-TH-127",
+    "title": "Ventilation mécanique double flux avec échangeur",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "VMC double flux avec échangeur haute performance."
+  },
+  {
+    "code": "BAR-TH-129",
+    "title": "Pompe à chaleur de type air/air (tertiaire résidentiel)",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "PAC air/air optimisée pour maison individuelle avec unité extérieure inverter."
+  },
+  {
+    "code": "BAR-TH-130",
+    "title": "Surperformance énergétique en construction neuve",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Bâtiment résidentiel neuf dépassant la performance énergétique réglementaire de référence."
+  },
+  {
+    "code": "BAR-TH-137",
+    "title": "Raccordement d'un bâtiment résidentiel à un réseau de chaleur",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Raccordement à un réseau de chaleur EnR&R."
+  },
+  {
+    "code": "BAR-TH-139",
+    "title": "Système de variation électronique de vitesse sur une pompe",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Installation d'un variateur électronique de vitesse (VEV) sur la pompe d'un système collectif de chauffage, de conditionnement d'ambiance ou de surpression d'eau — asservissement automatique à la demande (pression constante ou proportionnelle)."
+  },
+  {
+    "code": "BAR-TH-140",
+    "title": "Rénovation globale d'une maison individuelle",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Bouquet de travaux permettant un gain énergétique ≥ 55 % après travaux."
+  },
+  {
+    "code": "BAR-TH-141",
+    "title": "Climatiseur performant — France d'Outre-mer",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Climatiseur individuel haute performance énergétique installé en France d'Outre-mer."
+  },
+  {
+    "code": "BAR-TH-143",
+    "title": "Système solaire combiné",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Chauffage et ECS solaires combinés (SSC)."
+  },
+  {
+    "code": "BAR-TH-145",
+    "title": "Rénovation globale d'un bâtiment résidentiel collectif",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Rénovation performante d'immeuble avec gain énergétique important."
+  },
+  {
+    "code": "BAR-TH-148",
+    "title": "Chauffe-eau thermodynamique sur air extrait",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Chauffe-eau thermodynamique valorisant l'air extrait de la VMC."
+  },
+  {
+    "code": "BAR-TH-150",
+    "title": "Pompe à chaleur hybride individuelle",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "PAC hybride (PAC air/eau + chaudière gaz condensation)."
+  },
+  {
+    "code": "BAR-TH-155",
+    "title": "Isolation d'un réseau hydraulique de chauffage ou ECS",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Calorifugeage d'un réseau hydraulique en bâtiment collectif."
+  },
+  {
+    "code": "BAR-TH-158",
+    "title": "Fermeture isolante à lames orientables (brise-soleil orientable)",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Brise-soleil orientable motorisé en résidentiel pour limiter les apports solaires en été."
+  },
+  {
+    "code": "BAR-TH-159",
+    "title": "Isolation de points singuliers d'un réseau",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Isolation de vannes, brides et pompes en immeuble collectif."
+  },
+  {
+    "code": "BAR-TH-160",
+    "title": "Isolation d'un réseau hydraulique en logement individuel",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Calorifugeage d'un réseau hydraulique en maison individuelle."
+  },
+  {
+    "code": "BAR-TH-161",
+    "title": "Isolation d'un réseau hydraulique en existant tertiaire résidentiel",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Isolation de canalisations desservant plusieurs logements."
+  },
+  {
+    "code": "BAR-TH-162",
+    "title": "Système de régulation par programmation d'intermittence — logement collectif",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Régulation avec programmation d'intermittence sur émetteurs individuels en collectif."
+  },
+  {
+    "code": "BAR-TH-164",
+    "title": "Rénovation globale d'un bâtiment résidentiel — sortie de passoire",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Sortie de passoire énergétique (F ou G) via bouquet de travaux."
+  },
+  {
+    "code": "BAR-TH-165",
+    "title": "Chauffe-eau thermodynamique avec appoint intégré",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Chauffe-eau thermodynamique avec appoint électrique intégré."
+  },
+  {
+    "code": "BAR-TH-167",
+    "title": "Chauffe-bain gaz individuel à haut rendement",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Chauffe-bain gaz individuel à haut rendement ou à condensation."
+  },
+  {
+    "code": "BAR-TH-169",
+    "title": "Pompe à chaleur collective pour production d'ECS",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "PAC collective air/eau ou eau/eau dédiée à la production d'eau chaude sanitaire en immeuble."
+  },
+  {
+    "code": "BAR-TH-170",
+    "title": "Récupération de chaleur fatale sur serveurs informatiques pour ECS",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Valorisation de la chaleur fatale de serveurs informatiques pour la production d'ECS collective."
+  },
+  {
+    "code": "BAR-TH-171",
+    "title": "Pompe à chaleur air/eau (post-2022)",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Version actualisée pour PAC air/eau haute performance en maison individuelle."
+  },
+  {
+    "code": "BAR-TH-172",
+    "title": "Pompe à chaleur hybride (post-2022)",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Version actualisée pour PAC hybride."
+  },
+  {
+    "code": "BAR-TH-173",
+    "title": "Système solaire combiné (post-2022)",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Version actualisée du SSC."
+  },
+  {
+    "code": "BAR-TH-174",
+    "title": "Chauffe-eau solaire individuel (post-2022)",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Version actualisée du CESI."
+  },
+  {
+    "code": "BAR-TH-175",
+    "title": "Rénovation d'ampleur d'un appartement",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Rénovation d'ampleur d'un appartement pris individuellement avec gain énergétique conforme au barème CEE."
+  },
+  {
+    "code": "BAR-TH-176",
+    "title": "Régulation intelligente d'un chauffe-eau électrique à effet Joule",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Pilotage intelligent d'un chauffe-eau électrique à accumulation en résidentiel."
+  },
+  {
+    "code": "BAR-TH-177",
+    "title": "Rénovation globale de copropriété",
+    "sector": "Résidentiel",
+    "family": "BAR",
+    "category": "Thermique",
+    "summary": "Bouquet de travaux de rénovation globale d'un bâtiment résidentiel collectif en copropriété."
+  },
+  {
+    "code": "BAT-EN-101",
+    "title": "Isolation des combles ou de toiture (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Isolation des combles ou de toiture en bâtiment tertiaire."
+  },
+  {
+    "code": "BAT-EN-102",
+    "title": "Isolation des murs (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "ITE ou ITI en bâtiment tertiaire."
+  },
+  {
+    "code": "BAT-EN-103",
+    "title": "Isolation d'un plancher (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Isolation de plancher bas en tertiaire."
+  },
+  {
+    "code": "BAT-EN-104",
+    "title": "Fenêtre ou porte-fenêtre isolante (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Menuiseries à vitrage isolant en tertiaire."
+  },
+  {
+    "code": "BAT-EN-106",
+    "title": "Isolation d'une toiture-terrasse tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Toiture-terrasse isolée par l'extérieur en tertiaire."
+  },
+  {
+    "code": "BAT-EN-107",
+    "title": "Isolation d'une toiture-terrasse (tertiaire, variante)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Isolation par l'extérieur d'une toiture-terrasse en bâtiment tertiaire — variante de la BAT-EN-106."
+  },
+  {
+    "code": "BAT-EN-108",
+    "title": "Fermeture isolante tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Fermetures isolantes en tertiaire."
+  },
+  {
+    "code": "BAT-EN-109",
+    "title": "Réduction des apports solaires par la toiture — Tertiaire Outre-mer",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Peinture réfléchissante ou revêtement cool-roof (SRI ≥ 90) sur toiture de tertiaire en Outre-mer."
+  },
+  {
+    "code": "BAT-EN-110",
+    "title": "Protection solaire des baies — Tertiaire Outre-mer",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Pose de protections solaires extérieures (BSO, stores screen, casquettes) sur baies de tertiaire en Outre-mer."
+  },
+  {
+    "code": "BAT-EN-111",
+    "title": "Fenêtre à vitrage pariétodynamique (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Fenêtre pariétodynamique valorisant l'air neuf pour préchauffer l'air entrant en tertiaire."
+  },
+  {
+    "code": "BAT-EN-112",
+    "title": "Revêtement réflectif en toiture (tertiaire, métropole)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Revêtement réflectif haute performance (SRI ≥ 78) sur toiture de tertiaire en métropole."
+  },
+  {
+    "code": "BAT-EN-113",
+    "title": "Façade rideau à vitrage isolant",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Enveloppe",
+    "summary": "Remplacement ou pose d'une façade rideau à double vitrage isolant en bâtiment tertiaire."
+  },
+  {
+    "code": "BAT-EQ-117",
+    "title": "Installation frigorifique au CO₂ transcritique",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Groupe frigorifique CO₂ (R744) transcritique pour supermarché ou entrepôt frigorifique."
+  },
+  {
+    "code": "BAT-EQ-123",
+    "title": "Motorisation à variateur électronique de vitesse (moteur synchrone)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Motorisation synchrone à aimants permanents pilotée par variateur en tertiaire."
+  },
+  {
+    "code": "BAT-EQ-124",
+    "title": "Fermeture des meubles frigorifiques positifs",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Pose de portes vitrées sur meubles frigorifiques ouverts positifs en distribution alimentaire."
+  },
+  {
+    "code": "BAT-EQ-125",
+    "title": "Fermeture des meubles frigorifiques négatifs",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Pose de portes vitrées sur meubles frigorifiques ouverts négatifs en distribution alimentaire."
+  },
+  {
+    "code": "BAT-EQ-127",
+    "title": "Luminaire à modules LED (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Luminaire LED en tertiaire (efficacité lumineuse minimale, gradation)."
+  },
+  {
+    "code": "BAT-EQ-129",
+    "title": "Système de gestion de l'éclairage",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Détecteurs de présence, gradation, exploitation lumière du jour."
+  },
+  {
+    "code": "BAT-EQ-130",
+    "title": "Groupe de production frigorifique à condensation à haute efficacité",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Groupe frigorifique à condensation haute efficacité (COP nominal élevé) pour supermarché ou tertiaire."
+  },
+  {
+    "code": "BAT-EQ-131",
+    "title": "Plaques de cuisson à induction en restauration collective",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Remplacement de plaques gaz par des plaques à induction (rendement ≥ 85 %) en restauration collective."
+  },
+  {
+    "code": "BAT-EQ-133",
+    "title": "Système de récupération d'énergie sur ascenseur",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Récupération d'énergie sur ascenseur en tertiaire."
+  },
+  {
+    "code": "BAT-EQ-134",
+    "title": "Système de recharge pour véhicules électriques (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "IRVE en parking tertiaire."
+  },
+  {
+    "code": "BAT-EQ-135",
+    "title": "Alimentation sans interruption (ASI) à haute efficacité",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Onduleur ASI haute efficacité (rendement ≥ 96 % en mode double conversion) pour datacenter ou tertiaire critique."
+  },
+  {
+    "code": "BAT-EQ-136",
+    "title": "Feux de signalisation routière à modules LED",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Équipements",
+    "summary": "Remplacement des lampes à incandescence des feux tricolores par des modules LED (NF EN 12368)."
+  },
+  {
+    "code": "BAT-SE-102",
+    "title": "Programme d'aide à la décision — audit énergétique",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Services",
+    "summary": "Audit énergétique tertiaire."
+  },
+  {
+    "code": "BAT-SE-103",
+    "title": "Système de suivi et de pilotage énergétique (économe de flux)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Services",
+    "summary": "Économe de flux pour parc tertiaire."
+  },
+  {
+    "code": "BAT-SE-104",
+    "title": "Formation d'exploitants aux économies d'énergie",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Services",
+    "summary": "Formation des exploitants de bâtiments tertiaires."
+  },
+  {
+    "code": "BAT-SE-105",
+    "title": "Abaissement de la température de retour vers un réseau de chaleur (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Services",
+    "summary": "Optimisation d'une sous-station tertiaire raccordée à un réseau de chaleur pour abaisser la température de retour."
+  },
+  {
+    "code": "BAT-TH-102",
+    "title": "Récupération de chaleur sur groupe de production de froid",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Récupération de chaleur sur condenseur de groupe froid."
+  },
+  {
+    "code": "BAT-TH-103",
+    "title": "Système de variation électronique de vitesse sur moteur asynchrone",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Variateur électronique de vitesse sur moteur asynchrone (ventilation, pompage)."
+  },
+  {
+    "code": "BAT-TH-104",
+    "title": "Pompe à chaleur air/eau ou eau/eau (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "PAC air/eau ou eau/eau en bâtiment tertiaire."
+  },
+  {
+    "code": "BAT-TH-105",
+    "title": "Programmation d'intermittence sur chauffage",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Programmation d'intermittence sur système de chauffage tertiaire."
+  },
+  {
+    "code": "BAT-TH-106",
+    "title": "Système de régulation par sonde extérieure",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Régulation par sonde de température extérieure sur chaudière tertiaire."
+  },
+  {
+    "code": "BAT-TH-107",
+    "title": "Chaudière collective à haute performance énergétique tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Chaudière tertiaire HPE (rendement PCI ≥ 92 %)."
+  },
+  {
+    "code": "BAT-TH-108",
+    "title": "Robinet thermostatique tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Robinets thermostatiques sur émetteurs en bâtiment tertiaire."
+  },
+  {
+    "code": "BAT-TH-109",
+    "title": "Isolation d'un réseau hydraulique en tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Calorifugeage de canalisations en bâtiment tertiaire."
+  },
+  {
+    "code": "BAT-TH-110",
+    "title": "Isolation des points singuliers d'un réseau tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Coquilles isolantes sur vannes et brides en tertiaire."
+  },
+  {
+    "code": "BAT-TH-111",
+    "title": "Pompe à chaleur air/air (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "PAC air/air en bâtiment tertiaire (bureau, commerce)."
+  },
+  {
+    "code": "BAT-TH-112",
+    "title": "Système de gestion technique du bâtiment (GTB)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Installation d'une GTB conforme à la norme NF EN ISO 52120-1 (BAT-TH-116 remplacé)."
+  },
+  {
+    "code": "BAT-TH-113",
+    "title": "Système de récupération de chaleur sur air extrait",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Récupération de chaleur sur air extrait en centrale de traitement d'air."
+  },
+  {
+    "code": "BAT-TH-114",
+    "title": "Ventilation double flux avec échangeur (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Centrale double flux à échangeur haute performance en tertiaire."
+  },
+  {
+    "code": "BAT-TH-115",
+    "title": "Système hydro-économe en tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Mitigeurs, mousseurs et régulateurs sur points de puisage tertiaire."
+  },
+  {
+    "code": "BAT-TH-116",
+    "title": "Système de gestion technique du bâtiment (nouvelle version)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "GTB conforme à la norme NF EN ISO 52120-1 pour bâtiments tertiaires — pilotage multi-lots."
+  },
+  {
+    "code": "BAT-TH-117",
+    "title": "Système de télégestion d'un parc d'installations",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Télégestion d'un parc de bâtiments tertiaires."
+  },
+  {
+    "code": "BAT-TH-118",
+    "title": "Destratificateur ou brasseur d'air (grande hauteur)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Destratificateurs en bâtiment grande hauteur pour homogénéiser température."
+  },
+  {
+    "code": "BAT-TH-119",
+    "title": "Système de mesurage indexé des consommations",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Sous-comptage des consommations d'énergie en tertiaire."
+  },
+  {
+    "code": "BAT-TH-121",
+    "title": "Récupération de chaleur sur eau grise",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Récupérateur de chaleur sur eaux grises en hôtellerie ou sport."
+  },
+  {
+    "code": "BAT-TH-122",
+    "title": "Programmateur d'intermittence sur climatisation — Outre-mer",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Programmation d'intermittence appliquée à la climatisation de bâtiments tertiaires en Outre-mer."
+  },
+  {
+    "code": "BAT-TH-125",
+    "title": "Radiateur basse température (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Remplacement d'émetteurs par des radiateurs basse température."
+  },
+  {
+    "code": "BAT-TH-126",
+    "title": "Ventilation mécanique double flux avec échangeur (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "VMC double flux à échangeur haute performance en tertiaire (variante post-2022)."
+  },
+  {
+    "code": "BAT-TH-127",
+    "title": "Groupe de production d'eau glacée à haute performance",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Chiller à haute performance énergétique."
+  },
+  {
+    "code": "BAT-TH-129",
+    "title": "Climatisation performante multi-zones (VRV/VRF) tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Systèmes VRV/VRF haute performance (SEER ≥ 6,1, SCOP ≥ 4,0) en bâtiment tertiaire."
+  },
+  {
+    "code": "BAT-TH-134",
+    "title": "Récupération de chaleur sur circuit CVC",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Récupération de chaleur sur système CVC."
+  },
+  {
+    "code": "BAT-TH-135",
+    "title": "Haute pression flottante d'installation frigorifique — Outre-mer",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Optimisation de la haute pression par flottement en installation frigorifique tertiaire en Outre-mer."
+  },
+  {
+    "code": "BAT-TH-137",
+    "title": "Chambre froide à condensation flottante avec récupération de chaleur",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Chambre froide tertiaire avec condensation flottante et récupération de chaleur pour ECS."
+  },
+  {
+    "code": "BAT-TH-139",
+    "title": "Raccordement d'un bâtiment tertiaire à un réseau de chaleur",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Raccordement à un réseau de chaleur classé."
+  },
+  {
+    "code": "BAT-TH-140",
+    "title": "Ventilation à débit variable en restauration collective",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Hotte et centrale à débit variable pilotées par capteur d'activité en cuisine professionnelle."
+  },
+  {
+    "code": "BAT-TH-141",
+    "title": "Chaudière biomasse (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Chaudière biomasse haute performance en tertiaire."
+  },
+  {
+    "code": "BAT-TH-142",
+    "title": "Rénovation globale d'un bâtiment tertiaire",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Bouquet de travaux permettant un gain ≥ 40 % en tertiaire."
+  },
+  {
+    "code": "BAT-TH-143",
+    "title": "Ventilo-convecteurs à haute performance",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Ventilo-convecteurs haute performance équipant un réseau d'eau glacée ou chaude en tertiaire."
+  },
+  {
+    "code": "BAT-TH-145",
+    "title": "Basse pression flottante d'installation frigorifique — Métropole",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Optimisation de la basse pression par flottement sur installation frigorifique tertiaire en métropole."
+  },
+  {
+    "code": "BAT-TH-146",
+    "title": "Pompe à chaleur haute température",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "PAC haute température pour ECS ou chauffage industriel-tertiaire."
+  },
+  {
+    "code": "BAT-TH-149",
+    "title": "Récupération de chaleur sur air extrait (tertiaire, post-2022)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Récupérateur haute performance sur air extrait de centrale de traitement d'air tertiaire."
+  },
+  {
+    "code": "BAT-TH-153",
+    "title": "Confinement d'allées en centre de données",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Confinement des allées chaudes ou froides d'un datacenter pour réduire la consommation de froid."
+  },
+  {
+    "code": "BAT-TH-154",
+    "title": "Récupération de chaleur sur eaux grises (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Récupérateur de chaleur sur eaux grises en hôtellerie, sport ou établissement de santé."
+  },
+  {
+    "code": "BAT-TH-155",
+    "title": "Optimisation d'installation frigorifique par flottement de pression",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Régulation par flottement de pression sur installations frigorifiques."
+  },
+  {
+    "code": "BAT-TH-156",
+    "title": "Free-cooling par eau de refroidissement",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Free-cooling utilisant une boucle d'eau de refroidissement pour les datacenters ou process tertiaires."
+  },
+  {
+    "code": "BAT-TH-157",
+    "title": "Chaudière biomasse collective (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Chaudière biomasse à granulés ou plaquettes pour chauffage collectif tertiaire."
+  },
+  {
+    "code": "BAT-TH-158",
+    "title": "Fermeture isolante à lames orientables (tertiaire)",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Brise-soleil orientable motorisé en tertiaire pour limiter les apports solaires."
+  },
+  {
+    "code": "BAT-TH-159",
+    "title": "Raccordement d'un bâtiment tertiaire à un réseau de froid",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Raccordement d'un bâtiment tertiaire à un réseau de froid classé."
+  },
+  {
+    "code": "BAT-TH-161",
+    "title": "Maintien en température de groupes électrogènes par PAC",
+    "sector": "Tertiaire",
+    "family": "BAT",
+    "category": "Thermique",
+    "summary": "Pompe à chaleur dédiée au maintien en température de groupes électrogènes de secours."
+  },
+  {
+    "code": "IND-BA-112",
+    "title": "Système de gestion technique du bâtiment industriel",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Bâtiment",
+    "summary": "GTB en bâtiment industriel (chauffage, éclairage, ventilation)."
+  },
+  {
+    "code": "IND-BA-116",
+    "title": "Isolation de combles ou de toiture (bâtiment industriel)",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Bâtiment",
+    "summary": "Isolation de toiture ou combles en bâtiment industriel."
+  },
+  {
+    "code": "IND-BA-117",
+    "title": "Isolation des murs (bâtiment industriel)",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Bâtiment",
+    "summary": "ITE ou ITI en bâtiment industriel."
+  },
+  {
+    "code": "IND-SE-01",
+    "title": "Système de management de l'énergie ISO 50001",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Services",
+    "summary": "Mise en place d'un SMÉ certifié ISO 50001."
+  },
+  {
+    "code": "IND-SE-02",
+    "title": "Étude énergétique industrielle",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Services",
+    "summary": "Audit énergétique industriel réglementaire."
+  },
+  {
+    "code": "IND-SE-04",
+    "title": "Plan de mesurage énergétique",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Services",
+    "summary": "Plan de comptage énergétique par usage."
+  },
+  {
+    "code": "IND-UT-102",
+    "title": "Système de variation de vitesse électronique sur moteur asynchrone",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Variateur électronique de vitesse sur moteur industriel."
+  },
+  {
+    "code": "IND-UT-103",
+    "title": "Moteur électrique classe IE3 ou IE4",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Moteur asynchrone à haut rendement (IE3/IE4)."
+  },
+  {
+    "code": "IND-UT-104",
+    "title": "Presse à injecter à haute performance",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Presses à injecter électriques ou hybrides haute performance."
+  },
+  {
+    "code": "IND-UT-105",
+    "title": "Récupération de chaleur sur groupe de production de froid",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Récupération sur condenseur de groupe froid industriel."
+  },
+  {
+    "code": "IND-UT-107",
+    "title": "Isolation d'un four industriel",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Isolation thermique de four industriel."
+  },
+  {
+    "code": "IND-UT-108",
+    "title": "Chaudière de production de vapeur ou d'eau chaude — HPE",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Chaudière industrielle vapeur/eau chaude haute performance."
+  },
+  {
+    "code": "IND-UT-109",
+    "title": "Système de mesurage d'index de consommation énergétique",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Compteurs de sous-comptage sur utilités industrielles."
+  },
+  {
+    "code": "IND-UT-110",
+    "title": "Système de récupération de chaleur sur compresseur d'air",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Récupération de chaleur sur compresseur d'air industriel."
+  },
+  {
+    "code": "IND-UT-111",
+    "title": "Isolation de points singuliers",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Coquilles isolantes sur vannes, brides et pompes industrielles."
+  },
+  {
+    "code": "IND-UT-112",
+    "title": "Compresseur d'air à vis à variation de vitesse",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Compresseur d'air à vitesse variable."
+  },
+  {
+    "code": "IND-UT-113",
+    "title": "Système de récupération de chaleur sur fumées de chaudière",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Économiseur/condenseur sur fumées chaudière industrielle."
+  },
+  {
+    "code": "IND-UT-114",
+    "title": "Système de mesurage individuel sur presses à injecter",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Mesurage énergétique par presse."
+  },
+  {
+    "code": "IND-UT-115",
+    "title": "Système de régulation en fonction de la charge sur compresseur",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Régulation en cascade sur compresseurs d'air."
+  },
+  {
+    "code": "IND-UT-116",
+    "title": "Matelas isolant pour équipements industriels",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Matelas amovibles pour vannes, brides et échangeurs."
+  },
+  {
+    "code": "IND-UT-117",
+    "title": "Système de contrôle-commande sur chaudière",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Régulation avancée sur chaudière industrielle."
+  },
+  {
+    "code": "IND-UT-118",
+    "title": "Brûleur régulé par sonde d'oxygène",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Optimisation combustion par sonde O₂."
+  },
+  {
+    "code": "IND-UT-119",
+    "title": "Récupération de chaleur sur buées de séchoirs",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Récupération sur buées de séchage industriel."
+  },
+  {
+    "code": "IND-UT-120",
+    "title": "Système de dévésiculage sur turbine à vapeur",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Dévésiculeur sur turbine à vapeur industrielle."
+  },
+  {
+    "code": "IND-UT-121",
+    "title": "Récupération de chaleur sur groupe de production de froid — sur eau chaude sanitaire",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Récupération pour ECS industrielle."
+  },
+  {
+    "code": "IND-UT-125",
+    "title": "Système de récupération de chaleur sur four",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Récupération de chaleur fatale de four industriel."
+  },
+  {
+    "code": "IND-UT-128",
+    "title": "Système de récupération de chaleur sur eaux résiduaires",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Récupération sur eaux résiduaires industrielles."
+  },
+  {
+    "code": "IND-UT-129",
+    "title": "Pompe à chaleur haute température (industrie)",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "PAC HT pour process industriel."
+  },
+  {
+    "code": "IND-UT-131",
+    "title": "Système de brumisation haute pression",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Brumisation haute pression en process industriel."
+  },
+  {
+    "code": "IND-UT-134",
+    "title": "Système de mesure et suivi énergétique par usage",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Monitoring énergétique par usage industriel."
+  },
+  {
+    "code": "IND-UT-136",
+    "title": "Rénovation d'un système d'air comprimé",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Rénovation globale du réseau d'air comprimé."
+  },
+  {
+    "code": "IND-UT-155",
+    "title": "Optimisation d'installation frigorifique par flottement de pression (industrie)",
+    "sector": "Industrie",
+    "family": "IND",
+    "category": "Utilités",
+    "summary": "Régulation par flottement de pression (haute et/ou basse) sur installation frigorifique industrielle."
+  },
+  {
+    "code": "RES-CH-103",
+    "title": "Rénovation d'un poste de livraison d'un réseau de chaleur",
+    "sector": "Réseaux",
+    "family": "RES",
+    "category": "Chaleur",
+    "summary": "Rénovation de poste de livraison de réseau de chaleur."
+  },
+  {
+    "code": "RES-CH-104",
+    "title": "Réhabilitation d'un réseau de chaleur",
+    "sector": "Réseaux",
+    "family": "RES",
+    "category": "Chaleur",
+    "summary": "Réhabilitation d'un tronçon de réseau de chaleur."
+  },
+  {
+    "code": "RES-CH-106",
+    "title": "Isolation d'un réseau de chaleur",
+    "sector": "Réseaux",
+    "family": "RES",
+    "category": "Chaleur",
+    "summary": "Isolation renforcée de canalisations enterrées de réseau de chaleur."
+  },
+  {
+    "code": "RES-CH-108",
+    "title": "Récupération de chaleur fatale sur réseau",
+    "sector": "Réseaux",
+    "family": "RES",
+    "category": "Chaleur",
+    "summary": "Injection de chaleur fatale industrielle sur réseau de chaleur."
+  },
+  {
+    "code": "RES-EC-101",
+    "title": "Rénovation d'un système d'éclairage extérieur",
+    "sector": "Réseaux",
+    "family": "RES",
+    "category": "Éclairage",
+    "summary": "Rénovation d'éclairage public par luminaires LED."
+  },
+  {
+    "code": "RES-EC-103",
+    "title": "Système de gestion de l'éclairage public",
+    "sector": "Réseaux",
+    "family": "RES",
+    "category": "Éclairage",
+    "summary": "Télégestion d'éclairage public (variation, détection)."
+  },
+  {
+    "code": "RES-EC-104",
+    "title": "Rénovation d'un système d'éclairage de mise en valeur du patrimoine",
+    "sector": "Réseaux",
+    "family": "RES",
+    "category": "Éclairage",
+    "summary": "Éclairage patrimonial LED basse consommation."
+  },
+  {
+    "code": "TRA-EQ-101",
+    "title": "Unité fixe d'électrification à quai (aéroport)",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "Alimentation électrique à quai pour avions au sol."
+  },
+  {
+    "code": "TRA-EQ-104",
+    "title": "Système de recharge pour véhicules électriques (parc public)",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "IRVE en parking public ou entreprise."
+  },
+  {
+    "code": "TRA-EQ-107",
+    "title": "Système de télématique embarquée (flotte)",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "Télématique pour éco-conduite et suivi flotte."
+  },
+  {
+    "code": "TRA-EQ-114",
+    "title": "Cargo cycle à assistance électrique",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "Vélo cargo à assistance électrique en logistique urbaine."
+  },
+  {
+    "code": "TRA-EQ-117",
+    "title": "Formation à l'éco-conduite (véhicules légers)",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "Formation éco-conduite VUL et VL."
+  },
+  {
+    "code": "TRA-EQ-124",
+    "title": "Cargo cycle mécanique",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "Vélo cargo mécanique en logistique urbaine."
+  },
+  {
+    "code": "TRA-EQ-127",
+    "title": "Rétrofit électrique d'un véhicule utilitaire léger",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "Conversion électrique de VUL thermique."
+  },
+  {
+    "code": "TRA-EQ-128",
+    "title": "Rétrofit électrique d'un autocar / autobus",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "Rétrofit électrique de bus/autocar."
+  },
+  {
+    "code": "TRA-EQ-129",
+    "title": "Système d'électrification pour aire de stationnement PL",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Équipements",
+    "summary": "Alimentation électrique de PL stationnés."
+  },
+  {
+    "code": "TRA-IN-101",
+    "title": "Infrastructure de ravitaillement bioGNV / GNV",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Infrastructure",
+    "summary": "Station bioGNV pour flotte PL/VUL."
+  },
+  {
+    "code": "TRA-IN-102",
+    "title": "Infrastructure de recharge PL",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Infrastructure",
+    "summary": "Station de recharge haute puissance pour PL électriques."
+  },
+  {
+    "code": "TRA-SE-101",
+    "title": "Programme de conseil en mobilité",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Services",
+    "summary": "Programme de conseil et diagnostic mobilité."
+  },
+  {
+    "code": "TRA-SE-104",
+    "title": "Système d'auto-partage électrique",
+    "sector": "Transport",
+    "family": "TRA",
+    "category": "Services",
+    "summary": "Service d'auto-partage de véhicules électriques."
+  }
+]

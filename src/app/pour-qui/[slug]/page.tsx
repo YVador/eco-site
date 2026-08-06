@@ -26,6 +26,7 @@ export default async function AudiencePage({ params }: Props) {
   if (!u) notFound();
 
   const list = getProductsByUsage(slug as AudienceSlug);
+  const highlight = "highlight" in u ? u.highlight : undefined;
 
   return (
     <>
@@ -40,12 +41,22 @@ export default async function AudiencePage({ params }: Props) {
         />
         <div className="absolute inset-0 bg-bg-inverse/70" />
         <div className="container-site relative flex min-h-[320px] flex-col justify-end py-12">
-          <p className="eyebrow text-cta">Pour qui</p>
+          <p className="eyebrow text-cta">Vous êtes ?</p>
           <h1 className="mt-2 font-display text-4xl md:text-6xl">{u.title}</h1>
           <p className="mt-3 max-w-xl text-white/80">{u.description}</p>
         </div>
       </section>
       <TrustBar compact />
+      {highlight && (
+        <section className="section-tight border-b border-border bg-bg-muted">
+          <div className="container-site max-w-3xl">
+            <p className="eyebrow">Décret tertiaire</p>
+            <p className="mt-3 text-lg leading-relaxed text-text-muted">
+              {highlight}
+            </p>
+          </div>
+        </section>
+      )}
       <section className="section">
         <div className="container-site">
           <h2 className="font-display text-3xl">Solutions adaptées</h2>
@@ -54,8 +65,8 @@ export default async function AudiencePage({ params }: Props) {
               <ProductCard key={product.slug} product={product} />
             ))}
           </div>
-          <Link href="/simulation" className="btn btn-cta mt-10">
-            Demander une simulation
+          <Link href="/demande" className="btn btn-cta mt-10">
+            Orienter ma demande
           </Link>
         </div>
       </section>

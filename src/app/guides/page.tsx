@@ -19,6 +19,11 @@ export default function GuidesPage() {
         <p className="mt-4 max-w-xl text-text-muted">
           Définition, mandats et parcours de valorisation avec ECO INGENIERIE.
         </p>
+        <div className="mt-6">
+          <Link href="/fiches-cee" className="btn btn-primary">
+            Voir toutes les fiches CEE
+          </Link>
+        </div>
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {guides.map((guide) => (
             <Link

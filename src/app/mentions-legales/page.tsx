@@ -13,8 +13,7 @@ export default function Page() {
       description="Informations légales de l’éditeur du site ECO INGENIERIE."
     >
       <p>
-        <strong>Éditeur :</strong> ECO INGENIERIE — 10 Rue de Penthièvre, Paris
-        8ème
+        <strong>Éditeur :</strong> ECO INGENIERIE — 122 Avenue des Champs-Elysées, 75008 Paris
       </p>
       <p>
         <strong>Contact :</strong> contact@eco-ingenierie.fr — 06 52 39 03 06

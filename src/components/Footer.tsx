@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
-import { audiences, site } from "@/data/site";
+import { site } from "@/data/site";
 
 const certs = ["ISO 9001", "COFRAC", "CEE", "MaPrimeRénov’"];
 
@@ -42,26 +42,34 @@ export function Footer() {
         </div>
 
         <div className="lg:col-span-2">
-          <p className="text-sm font-semibold tracking-wide">Navigation</p>
+          <p className="text-sm font-semibold tracking-wide">Nos solutions</p>
           <ul className="mt-4 space-y-2.5 text-sm text-white/65">
             <li>
-              <Link href="/" className="transition hover:text-cta">
-                Accueil
+              <Link href="/solutions" className="transition hover:text-cta">
+                CEE
+              </Link>
+            </li>
+            <li>
+              <Link href="/fiches-cee" className="transition hover:text-cta">
+                Fiches CEE
               </Link>
             </li>
             <li>
               <Link href="/coup-de-pouce" className="transition hover:text-cta">
-                Coup de pouce
+                Coup de Pouce
               </Link>
             </li>
             <li>
-              <Link href="/guides" className="transition hover:text-cta">
-                Les CEE
+              <Link
+                href="/solutions/mandat-financier"
+                className="transition hover:text-cta"
+              >
+                Préfinancement
               </Link>
             </li>
             <li>
-              <Link href="/certifications" className="transition hover:text-cta">
-                Certifications
+              <Link href="/qui-sommes-nous" className="transition hover:text-cta">
+                Qui sommes-nous ?
               </Link>
             </li>
             <li>
@@ -73,22 +81,39 @@ export function Footer() {
         </div>
 
         <div className="lg:col-span-2">
-          <p className="text-sm font-semibold tracking-wide">Pour qui</p>
+          <p className="text-sm font-semibold tracking-wide">Vous êtes ?</p>
           <ul className="mt-4 space-y-2.5 text-sm text-white/65">
-            {audiences.slice(0, 5).map((u) => (
-              <li key={u.slug}>
-                <Link href={`/pour-qui/${u.slug}`} className="transition hover:text-cta">
-                  {u.title}
-                </Link>
-              </li>
-            ))}
+            <li>
+              <Link
+                href="/pour-qui/installateurs-artisans"
+                className="transition hover:text-cta"
+              >
+                Artisans
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/pour-qui/gestionnaires-batiments"
+                className="transition hover:text-cta"
+              >
+                Gestionnaire de bâtiments
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/pour-qui/collectivites"
+                className="transition hover:text-cta"
+              >
+                Mairie ou collectivités
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div className="lg:col-span-4">
           <p className="text-sm font-semibold tracking-wide">Un expert vous rappelle</p>
           <p className="mt-3 text-sm text-white/65">
-            Simulation, dossier CEE ou MaPrimeRénov’ — on vous recontacte rapidement.
+            Dossier CEE ou MaPrimeRénov’ — on vous recontacte rapidement.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link href="/contact" className="btn btn-cta px-5 py-3">

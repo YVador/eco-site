@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Demander une simulation",
+  title: "Orienter ma demande",
   description:
-    "Simulation CEE ECO INGENIERIE : orientez votre demande en quelques questions.",
+    "Orientez votre demande CEE ECO INGENIERIE en quelques questions.",
 };
 
-export default function SimulationLayout({
+export default function DemandeLayout({
   children,
 }: {
   children: React.ReactNode;

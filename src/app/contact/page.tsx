@@ -4,7 +4,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contactez ECO INGENIERIE pour une demande CEE ou une simulation.",
+  description: "Contactez ECO INGENIERIE pour une demande CEE ou MaPrimeRénov’.",
 };
 
 export default function ContactPage() {
@@ -55,9 +55,6 @@ export default function ContactPage() {
             <Link href="/contact#formulaire" className="btn btn-cta">
               Un expert vous rappelle
             </Link>
-            <Link href="/simulation" className="btn btn-ghost">
-              Simulation guidée
-            </Link>
           </div>
         </div>
 
@@ -84,10 +81,11 @@ export default function ContactPage() {
                   Sélectionner
                 </option>
                 <option>Artisan</option>
+                <option>Gestionnaire de bâtiments</option>
+                <option>Mairie ou collectivité</option>
                 <option>Producteur énergie</option>
                 <option>Émetteur</option>
                 <option>Bailleur social</option>
-                <option>Collectivité locale</option>
                 <option>Particulier</option>
                 <option>Autre</option>
               </select>
@@ -105,9 +103,12 @@ export default function ContactPage() {
                 <option value="" disabled>
                   Sélectionner
                 </option>
-                <option>Informations</option>
-                <option>Projets</option>
-                <option>Bureau administratif</option>
+                <option>Demande d’informations</option>
+                <option>Conformité CEE</option>
+                <option>Conseils réglementaires</option>
+                <option>Dépôts de dossier</option>
+                <option>Valorisation CEE</option>
+                <option>Simulation</option>
               </select>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">

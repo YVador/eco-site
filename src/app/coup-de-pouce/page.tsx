@@ -45,8 +45,8 @@ export default function CoupDePoucePage() {
             dossiers et maximise vos aides.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/simulation" className="btn btn-cta">
-              Demander une simulation
+            <Link href="/demande" className="btn btn-cta">
+              Orienter ma demande
             </Link>
             <a href={site.phoneHref} className="btn btn-ghost">
               Appeler {site.phoneDisplay}

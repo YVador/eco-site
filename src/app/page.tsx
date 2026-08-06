@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { FinancedWorks } from "@/components/FinancedWorks";
 import { Logo } from "@/components/Logo";
 import {
   IconBadge,
@@ -14,20 +15,19 @@ import {
   IconTruck,
   IconVan,
 } from "@/components/Icons";
-import { ProductCard } from "@/components/ProductCard";
+import { MethodSteps } from "@/components/MethodSteps";
 import { ProofStrip } from "@/components/TrustBar";
 import { Reveal } from "@/components/Reveal";
 import { TestimonialsSlider } from "@/components/TestimonialsSlider";
-import { getBestsellers } from "@/data/products";
 import {
   audiences,
   comparisonLabels,
   comparisonRows,
   faqHome,
   guides,
+  navAudiences,
   site,
   testimonials,
-  timeline,
 } from "@/data/site";
 
 const audienceIcons = {
@@ -85,8 +85,6 @@ const whyItems = [
 ];
 
 export default function HomePage() {
-  const bestsellers = getBestsellers(4);
-
   return (
     <>
       <section className="relative min-h-[calc(100svh-4rem)] overflow-hidden text-white">
@@ -113,12 +111,12 @@ export default function HomePage() {
           <div className="fade-up">
             <Logo height={72} priority className="max-h-[4.5rem] drop-shadow-lg" />
           </div>
-          <h1 className="fade-up-delay mt-6 max-w-[16ch] font-display text-[2.6rem] leading-[0.98] md:text-6xl lg:text-[4.75rem]">
-            Unis dans la mission d’une transition énergétique rapide
+          <h1 className="fade-up-delay mt-6 max-w-[18ch] font-display text-[2.6rem] leading-[0.98] md:text-6xl lg:text-[4.75rem]">
+            Vous réalisez les travaux. Nous valorisons vos primes CEE.
           </h1>
           <p className="fade-up-delay-2 mt-7 max-w-xl text-base leading-relaxed text-white/88 md:text-xl">
-            Illuminez l’avenir avec des bâtiments éco-responsables. Faites la
-            différence avec ECO INGENIERIE — votre bureau unique pour les CEE.
+            Mandataire CEE, ECO Ingénierie accompagne les installateurs dans la
+            gestion, la conformité et la valorisation de leurs dossiers CEE.
           </p>
           <ul className="fade-up-delay-2 mt-8 flex flex-col gap-2.5 text-sm font-medium text-white/90 sm:flex-row sm:flex-wrap sm:gap-x-8">
             <li className="flex items-center gap-2">
@@ -131,25 +129,73 @@ export default function HomePage() {
               <span className="text-cta">✓</span> Paiement rapide des primes
             </li>
           </ul>
-          <div className="fade-up-delay-3 mt-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
+          <div className="fade-up-delay-3 mt-12 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <Link href="/contact" className="btn btn-cta text-base px-8 py-4">
               Un expert vous rappelle
             </Link>
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-5">
-              <Link
-                href="/solutions"
-                className="text-sm font-medium text-white/75 transition hover:text-white"
-              >
-                Nos solutions →
-              </Link>
-              <a
-                href={site.phoneHref}
-                className="text-sm font-semibold text-cta transition hover:brightness-110"
-              >
-                Appeler {site.phoneDisplay}
-              </a>
-            </div>
+            <Link
+              href="/solutions"
+              className="btn btn-ghost border-white/35 text-base px-8 py-4 text-white hover:border-white hover:bg-white/10"
+            >
+              Nos solutions
+            </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container-site grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <Reveal>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius-lg)] bg-bg-muted md:aspect-[4/3]">
+              <Image
+                src="/media/atelier.jpg"
+                alt="ECO INGENIERIE — partenaire de la transition énergétique"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={80}>
+            <div>
+              <p className="eyebrow">Qui sommes-nous ?</p>
+              <h2 className="mt-3 font-display text-3xl md:text-5xl">
+                Partenaire clé dans la transition énergétique et la valorisation
+                de vos CEE
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-text-muted">
+                En tant qu’intermédiaire privilégié, nous facilitons la mise en
+                relation entre les émetteurs et ceux qui souhaitent entreprendre
+                des projets éco-responsables.
+              </p>
+              <p className="mt-4 text-text-muted">
+                Notre expertise de 5 ans dans le secteur des CEE couvre les
+                demandes du conseil à la mise en œuvre — pour une expérience
+                fluide et efficace. Prise en charge simplifiée et rapide avec
+                notre offre clé en main.
+              </p>
+              <ul className="mt-6 space-y-2.5 text-sm font-medium">
+                {[
+                  "Bureau unique pour vos prises en charge CEE",
+                  "Mandataire CEE & MaPrimeRénov’",
+                  "Vérification documentaire ISO 9001 / COFRAC",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2.5">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 bg-accent" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="/qui-sommes-nous" className="btn btn-primary">
+                  En savoir plus
+                </Link>
+                <Link href="/contact" className="btn btn-ghost">
+                  Un expert vous rappelle
+                </Link>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -158,7 +204,7 @@ export default function HomePage() {
       <section id="pour-qui" className="section">
         <div className="container-site">
           <Reveal>
-            <p className="eyebrow">Pour qui</p>
+            <p className="eyebrow">Vous êtes ?</p>
             <h2 className="mt-3 max-w-3xl font-display text-4xl md:text-5xl lg:text-6xl">
               À qui s’adresse notre expertise CEE ?
             </h2>
@@ -169,7 +215,8 @@ export default function HomePage() {
           </Reveal>
 
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {audiences.map((audience, i) => {
+            {navAudiences.map((slug, i) => {
+              const audience = audiences.find((a) => a.slug === slug)!;
               const Icon = audienceIcons[audience.icon] ?? IconCheck;
               return (
                 <Reveal key={audience.slug} delay={i * 60}>
@@ -204,31 +251,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section bg-bg-muted">
+      <section className="section">
         <div className="container-site">
           <Reveal>
             <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="eyebrow">Solutions</p>
-                <h2 className="mt-3 font-display text-4xl md:text-5xl lg:text-6xl">
-                  Solutions clés en main pour vos CEE
+                <h2 className="mt-3 max-w-3xl font-display text-4xl md:text-5xl lg:text-6xl">
+                  Les travaux suivants peuvent être financés
                 </h2>
                 <p className="mt-4 max-w-lg text-lg text-text-muted">
-                  ECO INGENIERIE, votre bureau unique pour les prises en charge.
+                  Isolation, chauffage, ventilation, rénovation globale… des
+                  gestes éligibles CEE que nous vous aidons à valoriser.
                 </p>
               </div>
-              <Link href="/solutions" className="btn btn-primary shrink-0">
-                Voir toutes les solutions
+              <Link href="/fiches-cee" className="btn btn-primary shrink-0">
+                Voir les fiches CEE
               </Link>
             </div>
           </Reveal>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {bestsellers.map((product, i) => (
-              <Reveal key={product.slug} delay={i * 70}>
-                <ProductCard product={product} />
-              </Reveal>
-            ))}
-          </div>
+          <Reveal delay={60}>
+            <FinancedWorks />
+          </Reveal>
         </div>
       </section>
 
@@ -260,8 +304,8 @@ export default function HomePage() {
             ))}
           </div>
           <Reveal>
-            <Link href="/a-propos" className="btn btn-primary mt-12">
-              En savoir plus
+            <Link href="/qui-sommes-nous" className="btn btn-primary mt-12">
+              Qui sommes-nous ?
             </Link>
           </Reveal>
         </div>
@@ -311,66 +355,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section bg-bg-muted">
         <div className="container-site">
           <Reveal>
-            <p className="eyebrow">Parcours</p>
+            <p className="eyebrow">Notre méthode</p>
             <h2 className="mt-3 max-w-3xl font-display text-4xl md:text-5xl lg:text-6xl">
               Du dépôt de demande au paiement de la prime
             </h2>
-            <p className="mt-5 max-w-xl text-lg text-text-muted">
-              Quatre étapes simples, un accompagnement jusqu’à la valorisation.
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-text-muted">
+              Un seul interlocuteur, cinq étapes, un dossier sécurisé.
+              Choisissez une étape pour découvrir ce qu’elle recouvre.
             </p>
           </Reveal>
-
-          <div className="relative mt-16">
-            <div
-              className="absolute left-[1.15rem] top-0 bottom-0 w-px bg-border md:left-1/2 md:-translate-x-px"
-              aria-hidden
-            />
-            <ol className="space-y-10 md:space-y-16">
-              {timeline.map((item, i) => {
-                const left = i % 2 === 0;
-                return (
-                  <Reveal key={item.step}>
-                    <li className="relative grid gap-6 md:grid-cols-2 md:gap-12">
-                      <div className="absolute left-[1.15rem] z-10 flex h-9 w-9 -translate-x-1/2 items-center justify-center rounded-full border-2 border-accent bg-bg text-xs font-bold text-accent md:left-1/2">
-                        {item.step}
-                      </div>
-                      <div
-                        className={`${left ? "md:col-start-1 md:pr-16 md:text-right" : "md:col-start-2 md:pl-16"} pl-14 md:pl-0`}
-                      >
-                        <h3 className="font-display text-2xl md:text-3xl">
-                          {item.title}
-                        </h3>
-                        <p className="mt-3 text-text-muted">{item.text}</p>
-                      </div>
-                      <div
-                        className={`relative ml-14 aspect-[16/10] overflow-hidden rounded-[var(--radius)] shadow-[var(--shadow-md)] md:ml-0 ${
-                          left
-                            ? "md:col-start-2 md:row-start-1"
-                            : "md:col-start-1 md:row-start-1"
-                        }`}
-                      >
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          loading="eager"
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                        />
-                      </div>
-                    </li>
-                  </Reveal>
-                );
-              })}
-            </ol>
-          </div>
+          <Reveal delay={80}>
+            <MethodSteps />
+          </Reveal>
         </div>
       </section>
 
-      <section className="section bg-bg-muted">
+      <section className="section">
         <div className="container-site">
           <Reveal>
             <p className="eyebrow">Les CEE</p>
@@ -455,8 +458,7 @@ export default function HomePage() {
               Prenez contact avec nous
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-white/75">
-              Envoyez une demande d’information ou demandez votre simulation
-              CEE.
+              Envoyez une demande d’information ou orientez votre projet CEE.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
               <Link href="/contact" className="btn btn-cta">

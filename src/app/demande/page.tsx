@@ -10,11 +10,12 @@ const steps = [
     key: "usage",
     title: "Vous êtes ?",
     options: [
+      { value: "installateurs-artisans", label: "Artisans" },
+      { value: "gestionnaires-batiments", label: "Gestionnaire de bâtiments" },
+      { value: "collectivites", label: "Mairie ou collectivités" },
       { value: "entreprises-emettrices", label: "Entreprise émettrice" },
       { value: "fournisseurs-energie", label: "Fournisseur d’énergie" },
-      { value: "collectivites", label: "Collectivité locale" },
       { value: "bailleurs-sociaux", label: "Bailleur social" },
-      { value: "installateurs-artisans", label: "Installateur / artisan" },
       { value: "particuliers", label: "Particulier" },
     ],
   },
@@ -25,7 +26,7 @@ const steps = [
       { value: "prise-en-charge", label: "Prise en charge CEE clé en main" },
       { value: "mandat", label: "Mandat administratif / financier" },
       { value: "delegation", label: "Délégation de CEE" },
-      { value: "info", label: "Information / simulation" },
+      { value: "info", label: "Information / accompagnement" },
     ],
   },
   {
@@ -40,7 +41,7 @@ const steps = [
   },
 ] as const;
 
-export default function SimulationPage() {
+export default function DemandePage() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const done = step >= steps.length;
@@ -74,9 +75,9 @@ export default function SimulationPage() {
   return (
     <section className="section">
       <div className="container-site max-w-3xl">
-        <p className="eyebrow">Simulation</p>
+        <p className="eyebrow">Demande</p>
         <h1 className="mt-2 font-display text-4xl md:text-6xl">
-          Demandez votre simulation
+          Orientez votre demande
         </h1>
         <p className="mt-4 text-text-muted">
           3 questions pour orienter votre demande CEE — sans engagement.

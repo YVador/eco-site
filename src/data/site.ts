@@ -6,7 +6,7 @@ export const site = {
   phone: "06 52 39 03 06",
   phoneHref: "tel:+33652390306",
   phoneDisplay: "06 52 39 03 06",
-  address: "10 Rue de Penthièvre, Paris 8ème",
+  address: "122 Avenue des Champs-Elysées, 75008 Paris",
   hours: "10:00 – 20:00",
   url: "https://eco-ingenierie.fr",
   socials: [
@@ -34,6 +34,32 @@ export const trustItems = [
 
 export const audiences = [
   {
+    slug: "installateurs-artisans",
+    title: "Artisans",
+    description:
+      "Simplifiez la gestion administrative des CEE pour vous et vos clients.",
+    icon: "check" as const,
+    image: "/media/audience-artisan.jpg",
+  },
+  {
+    slug: "gestionnaires-batiments",
+    title: "Gestionnaire de bâtiments",
+    description:
+      "Répondez au décret tertiaire et valorisez vos travaux d’économies d’énergie grâce aux CEE.",
+    highlight:
+      "Le décret tertiaire impose une réduction progressive des consommations énergétiques des bâtiments tertiaires. ECO INGENIERIE vous aide à financer et valoriser vos actions via les primes CEE, en sécurisant conformité et dossiers.",
+    icon: "shield" as const,
+    image: "/media/audience-entreprise.jpg",
+  },
+  {
+    slug: "collectivites",
+    title: "Mairie ou collectivités",
+    description:
+      "Rénovez bâtiments et infrastructures et maximisez la valorisation de vos CEE.",
+    icon: "badge" as const,
+    image: "/media/audience-collectivite.jpg",
+  },
+  {
     slug: "entreprises-emettrices",
     title: "Entreprises émettrices",
     description:
@@ -50,28 +76,12 @@ export const audiences = [
     image: "/media/audience-energie.jpg",
   },
   {
-    slug: "collectivites",
-    title: "Collectivités locales",
-    description:
-      "Rénovez bâtiments et infrastructures et maximisez la valorisation de vos CEE.",
-    icon: "badge" as const,
-    image: "/media/audience-collectivite.jpg",
-  },
-  {
     slug: "bailleurs-sociaux",
     title: "Bailleurs sociaux",
     description:
       "Réalisez des économies sur vos parcs immobiliers grâce à la rénovation énergétique.",
     icon: "shield" as const,
     image: "/media/audience-bailleur.jpg",
-  },
-  {
-    slug: "installateurs-artisans",
-    title: "Installateurs & artisans",
-    description:
-      "Simplifiez la gestion administrative des CEE pour vous et vos clients.",
-    icon: "check" as const,
-    image: "/media/audience-artisan.jpg",
   },
   {
     slug: "particuliers",
@@ -85,6 +95,41 @@ export const audiences = [
 
 /** alias for components still expecting `usages` shape */
 export const usages = audiences;
+
+/** Audiences mises en avant dans le menu « Vous êtes ? » */
+export const navAudiences = [
+  "installateurs-artisans",
+  "gestionnaires-batiments",
+  "collectivites",
+] as const;
+
+export const mainNav = [
+  {
+    label: "Nos solutions",
+    children: [
+      { href: "/solutions", label: "CEE" },
+      { href: "/fiches-cee", label: "Fiches CEE" },
+      { href: "/coup-de-pouce", label: "Coup de Pouce" },
+      { href: "/solutions/mandat-financier", label: "Préfinancement" },
+    ],
+  },
+  {
+    label: "Vous êtes ?",
+    children: [
+      { href: "/pour-qui/installateurs-artisans", label: "Artisans" },
+      {
+        href: "/pour-qui/gestionnaires-batiments",
+        label: "Gestionnaire de bâtiments",
+      },
+      { href: "/pour-qui/collectivites", label: "Mairie ou collectivités" },
+    ],
+  },
+] as const;
+
+export const mainNavLinks = [
+  { href: "/qui-sommes-nous", label: "Qui sommes-nous ?" },
+  { href: "/contact", label: "Contact" },
+] as const;
 
 export const clientSectors = [
   { name: "Entreprises tertiaires", tag: "Émetteurs" },
@@ -188,39 +233,48 @@ export const faqHome = [
 export const timeline = [
   {
     step: "01",
-    title: "Dépôt de demande",
-    text: "Envoyez simplement votre demande de prise en charge à ECO INGENIERIE.",
+    title: "Éligibilité & cadrage",
+    tag: "Cadrage",
+    text: "Nous identifions vos gisements, vérifions l’éligibilité des travaux et cadrons le dossier selon les fiches CEE les plus adaptées à votre projet.",
+    metric: "48h",
+    metricLabel: "Retour éligibilité",
     image: "/media/step-01.jpg",
   },
   {
     step: "02",
-    title: "Prise de contact",
-    text: "Votre interlocuteur dédié prend contact et se charge de votre dossier.",
+    title: "Montage du dossier",
+    tag: "Montage",
+    text: "Votre interlocuteur dédié collecte les pièces, structure le dossier administratif et prépare les justificatifs requis pour une instruction fluide.",
+    metric: "Dédié",
+    metricLabel: "Chargé de mission",
     image: "/media/step-02.jpg",
   },
   {
     step: "03",
-    title: "Envoi du dossier",
-    text: "Dépôt de votre dossier CEE auprès de notre obligé.",
+    title: "Contrôle conformité",
+    tag: "Contrôle",
+    text: "Vérification documentaire rigoureuse et veille réglementaire pour sécuriser chaque dossier avant dépôt auprès de l’obligé.",
+    metric: "ISO",
+    metricLabel: "Contrôle qualité",
     image: "/media/step-03.jpg",
   },
   {
     step: "04",
-    title: "Paiement de la prime",
-    text: "Une fois la demande traitée, nous procédons au paiement rapide de la prime CEE.",
+    title: "Dépôt auprès de l’obligé",
+    tag: "Dépôt",
+    text: "Nous déposons votre dossier CEE auprès de notre obligé et assurons le suivi jusqu’à validation de la demande de certificats.",
+    metric: "Suivi",
+    metricLabel: "Jusqu’à validation",
     image: "/media/step-04.jpg",
   },
   {
     step: "05",
-    title: "Suivi & conformité",
-    text: "Contrôle documentaire, veille réglementaire et accompagnement jusqu’au bout.",
+    title: "Versement de la prime",
+    tag: "Prime",
+    text: "Une fois la demande traitée, nous procédons au versement rapide de la prime CEE — avec préfinancement possible selon le mandat.",
+    metric: "Rapide",
+    metricLabel: "Paiement de la prime",
     image: "/media/step-05.jpg",
-  },
-  {
-    step: "06",
-    title: "Transition réussie",
-    text: "Vos travaux éligibles valorisés, vos obligations honorées, votre projet accéléré.",
-    image: "/media/step-06.jpg",
   },
 ] as const;
 

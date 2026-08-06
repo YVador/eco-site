@@ -54,8 +54,8 @@ export default async function SolutionPage({ params }: Props) {
             <p className="mt-2 text-sm text-accent">{product.shipping}</p>
             <p className="mt-6 text-text-muted">{product.shortDescription}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/simulation" className="btn btn-cta">
-                Demander une simulation
+              <Link href="/demande" className="btn btn-cta">
+                Orienter ma demande
               </Link>
               <Link href="/contact" className="btn btn-ghost">
                 Nous contacter

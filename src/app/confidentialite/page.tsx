@@ -13,7 +13,7 @@ export default function Page() {
       description="Traitement des données personnelles collectées via ECO INGENIERIE."
     >
       <p>
-        Les données collectées via formulaires (contact, simulation, newsletter)
+        Les données collectées via formulaires (contact, demande, newsletter)
         sont utilisées pour répondre à vos demandes relatives aux CEE et
         MaPrimeRénov’.
       </p>

@@ -4,7 +4,8 @@ export type AudienceSlug =
   | "collectivites"
   | "bailleurs-sociaux"
   | "installateurs-artisans"
-  | "particuliers";
+  | "particuliers"
+  | "gestionnaires-batiments";
 
 export type Solution = {
   slug: string;
@@ -38,7 +39,7 @@ export const products: Solution[] = [
     name: "Prise en charge CEE clé en main",
     reference: "CEE-PACK",
     price: 0,
-    priceLabel: "Sur devis",
+    priceLabel: "Sur étude",
     voltage: 0,
     capacityAh: 0,
     cycles: 0,
@@ -49,12 +50,14 @@ export const products: Solution[] = [
       "fournisseurs-energie",
       "collectivites",
       "installateurs-artisans",
+      "gestionnaires-batiments",
     ],
     audiences: [
       "entreprises-emettrices",
       "fournisseurs-energie",
       "collectivites",
       "installateurs-artisans",
+      "gestionnaires-batiments",
     ],
     badge: "bestseller",
     inStock: true,
@@ -86,8 +89,8 @@ export const products: Solution[] = [
     cycles: 0,
     bluetooth: false,
     heater: false,
-    usages: ["particuliers", "bailleurs-sociaux", "installateurs-artisans"],
-    audiences: ["particuliers", "bailleurs-sociaux", "installateurs-artisans"],
+    usages: ["particuliers", "bailleurs-sociaux", "installateurs-artisans", "gestionnaires-batiments"],
+    audiences: ["particuliers", "bailleurs-sociaux", "installateurs-artisans", "gestionnaires-batiments"],
     badge: "new",
     inStock: true,
     shipping: "Accompagnement continu",
@@ -117,8 +120,8 @@ export const products: Solution[] = [
     cycles: 0,
     bluetooth: false,
     heater: false,
-    usages: ["particuliers", "installateurs-artisans", "bailleurs-sociaux"],
-    audiences: ["particuliers", "installateurs-artisans", "bailleurs-sociaux"],
+    usages: ["particuliers", "installateurs-artisans", "bailleurs-sociaux", "gestionnaires-batiments"],
+    audiences: ["particuliers", "installateurs-artisans", "bailleurs-sociaux", "gestionnaires-batiments"],
     badge: "bestseller",
     inStock: true,
     shipping: "Étude sous 72 h",
@@ -142,7 +145,7 @@ export const products: Solution[] = [
     name: "Délégation des CEE",
     reference: "DELEG-CEE",
     price: 0,
-    priceLabel: "Sur devis",
+    priceLabel: "Sur étude",
     voltage: 0,
     capacityAh: 0,
     cycles: 0,
@@ -172,7 +175,7 @@ export const products: Solution[] = [
     name: "Accompagnement administratif",
     reference: "ACCOMP-ADMIN",
     price: 0,
-    priceLabel: "Sur devis",
+    priceLabel: "Sur étude",
     voltage: 0,
     capacityAh: 0,
     cycles: 0,
@@ -182,11 +185,13 @@ export const products: Solution[] = [
       "installateurs-artisans",
       "entreprises-emettrices",
       "collectivites",
+      "gestionnaires-batiments",
     ],
     audiences: [
       "installateurs-artisans",
       "entreprises-emettrices",
       "collectivites",
+      "gestionnaires-batiments",
     ],
     inStock: true,
     shipping: "Dossier structuré",
@@ -216,8 +221,8 @@ export const products: Solution[] = [
     cycles: 0,
     bluetooth: false,
     heater: false,
-    usages: ["fournisseurs-energie", "collectivites", "entreprises-emettrices"],
-    audiences: ["fournisseurs-energie", "collectivites", "entreprises-emettrices"],
+    usages: ["fournisseurs-energie", "collectivites", "entreprises-emettrices", "gestionnaires-batiments"],
+    audiences: ["fournisseurs-energie", "collectivites", "entreprises-emettrices", "gestionnaires-batiments"],
     badge: "new",
     inStock: true,
     shipping: "Contrôle systématique",
@@ -253,7 +258,7 @@ export function getBestsellers(limit = 4) {
 }
 
 export function formatPrice(price: number) {
-  if (price <= 0) return "Sur devis";
+  if (price <= 0) return "Sur étude";
   return new Intl.NumberFormat("fr-FR", {
     style: "currency",
     currency: "EUR",
