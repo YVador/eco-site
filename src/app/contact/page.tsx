@@ -4,7 +4,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contactez ECO INGENIERIE pour une demande CEE ou MaPrimeRénov’.",
+  description: "Contactez ECO INGENIERIE pour une demande CEE.",
 };
 
 export default function ContactPage() {
@@ -80,8 +80,8 @@ export default function ContactPage() {
                 <option value="" disabled>
                   Sélectionner
                 </option>
-                <option>Artisan</option>
-                <option>Gestionnaire de bâtiments</option>
+                <option>Artisan / installateur</option>
+                <option>Bâtiment tertiaire ou industriel</option>
                 <option>Mairie ou collectivité</option>
                 <option>Producteur énergie</option>
                 <option>Émetteur</option>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <option>Conseils réglementaires</option>
                 <option>Dépôts de dossier</option>
                 <option>Valorisation CEE</option>
-                <option>Simulation</option>
+                <option>Orientation de projet</option>
               </select>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">

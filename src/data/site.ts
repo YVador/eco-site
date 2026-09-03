@@ -7,7 +7,7 @@ export const site = {
   phoneHref: "tel:+33652390306",
   phoneDisplay: "06 52 39 03 06",
   address: "122 Avenue des Champs-Elysées, 75008 Paris",
-  hours: "10:00 – 20:00",
+  hours: "8h – 18h",
   url: "https://eco-ingenierie.fr",
   socials: [
     // À remplacer par les URLs exactes du compte ECO INGENIERIE quand confirmées
@@ -24,8 +24,8 @@ export const site = {
 
 export const trustItems = [
   { label: "Expertise CEE · 5 ans", short: "5 ans d’expertise" },
-  { label: "Mandataire CEE & MaPrimeRénov’", short: "Mandataire officiel" },
-  { label: "ISO 9001 / COFRAC", short: "ISO 9001" },
+  { label: "Mandataire CEE", short: "Mandataire CEE" },
+  { label: "Contrôle documentaire", short: "Contrôle documentaire" },
   { label: "Guichet unique", short: "Guichet unique" },
   { label: "Paiement rapide des primes", short: "Primes rapides" },
   { label: "Veille réglementaire", short: "Veille réglementaire" },
@@ -35,7 +35,7 @@ export const trustItems = [
 export const audiences = [
   {
     slug: "installateurs-artisans",
-    title: "Artisans",
+    title: "Artisans / installateurs",
     description:
       "Simplifiez la gestion administrative des CEE pour vous et vos clients.",
     icon: "check" as const,
@@ -43,7 +43,7 @@ export const audiences = [
   },
   {
     slug: "gestionnaires-batiments",
-    title: "Gestionnaire de bâtiments",
+    title: "Bâtiments tertiaire ou industriel",
     description:
       "Répondez au décret tertiaire et valorisez vos travaux d’économies d’énergie grâce aux CEE.",
     highlight:
@@ -87,7 +87,7 @@ export const audiences = [
     slug: "particuliers",
     title: "Particuliers",
     description:
-      "Comprenez et valorisez vos aides CEE / MaPrimeRénov’ pour vos travaux.",
+      "Comprenez et valorisez vos aides CEE pour vos travaux de rénovation.",
     icon: "van" as const,
     image: "/media/audience-particulier.jpg",
   },
@@ -107,21 +107,45 @@ export const mainNav = [
   {
     label: "Nos solutions",
     children: [
-      { href: "/solutions", label: "CEE" },
-      { href: "/fiches-cee", label: "Fiches CEE" },
+      {
+        href: "/solutions/prise-en-charge-cee",
+        label: "Valorisation de primes CEE",
+      },
       { href: "/coup-de-pouce", label: "Coup de Pouce" },
       { href: "/solutions/mandat-financier", label: "Préfinancement" },
+      {
+        href: "/solutions/accompagnement-administratif",
+        label: "Gestion des dossiers CEE",
+      },
+      {
+        href: "/solutions/verification-documentaire",
+        label: "Contrôle et conformité",
+      },
+      {
+        href: "/outils-digitaux",
+        label: "Outils digitaux : Pixel IQ et Certificall",
+      },
+    ],
+  },
+  {
+    label: "CEE",
+    children: [
+      { href: "/fiches-cee", label: "Fiches CEE" },
+      { href: "/guides", label: "Comprendre les CEE" },
     ],
   },
   {
     label: "Vous êtes ?",
     children: [
-      { href: "/pour-qui/installateurs-artisans", label: "Artisans" },
+      { href: "/pour-qui/installateurs-artisans", label: "Artisans / installateurs" },
       {
         href: "/pour-qui/gestionnaires-batiments",
-        label: "Gestionnaire de bâtiments",
+        label: "Bâtiments tertiaire ou industriel",
       },
-      { href: "/pour-qui/collectivites", label: "Mairie ou collectivités" },
+      {
+        href: "/pour-qui/collectivites",
+        label: "Mairie ou collectivités",
+      },
     ],
   },
 ] as const;
@@ -145,14 +169,14 @@ export const guides = [
     slug: "quest-ce-quun-cee",
     title: "Qu’est-ce qu’un CEE ?",
     excerpt:
-      "Le Certificat d’Économies d’Énergie : définition, rôle et enjeux de la rénovation.",
+      "Loi POPE, Obligés, primes énergie : le fonctionnement du dispositif CEE.",
     readTime: "4 min",
     category: "Comprendre",
     image: "/media/guide-cee.jpg",
   },
   {
-    slug: "mandataire-cee-maprimerenov",
-    title: "Mandataire CEE & MaPrimeRénov’",
+    slug: "mandataire-cee",
+    title: "Mandataire CEE",
     excerpt:
       "Administratif et financier : comment ECO INGENIERIE avance les aides et sécurise vos dossiers.",
     readTime: "5 min",
@@ -225,8 +249,8 @@ export const faqHome = [
     a: "Entreprises, collectivités, fournisseurs d’énergie, bailleurs, installateurs et, dans certains cas, particuliers engagés dans la rénovation énergétique.",
   },
   {
-    q: "Êtes-vous mandataire MaPrimeRénov’ ?",
-    a: "Oui. ECO INGENIERIE est mandataire administratif et financier pour les CEE et MaPrimeRénov’ : accompagnement du dossier et préfinancement possible.",
+    q: "Êtes-vous mandataire CEE ?",
+    a: "Oui. ECO INGENIERIE est mandataire administratif et financier pour les CEE : accompagnement du dossier et préfinancement possible.",
   },
 ] as const;
 
@@ -254,8 +278,8 @@ export const timeline = [
     title: "Contrôle conformité",
     tag: "Contrôle",
     text: "Vérification documentaire rigoureuse et veille réglementaire pour sécuriser chaque dossier avant dépôt auprès de l’obligé.",
-    metric: "ISO",
-    metricLabel: "Contrôle qualité",
+    metric: "100%",
+    metricLabel: "Dossiers contrôlés",
     image: "/media/step-03.jpg",
   },
   {
@@ -281,33 +305,33 @@ export const timeline = [
 export const comparisonRows = [
   {
     label: "Complexité administrative",
-    lithium: "Prise en charge clé en main",
-    agm: "Gestion seule, risque d’erreurs",
+    withUs: "Prise en charge clé en main",
+    withoutUs: "Gestion seule, risque d’erreurs",
   },
   {
-    label: "Délais de prime",
-    lithium: "Traitement accéléré",
-    agm: "Délais souvent allongés",
+    label: "Délai de paiement",
+    withUs: "Traitement accéléré",
+    withoutUs: "Délais souvent allongés",
   },
   {
     label: "Conformité",
-    lithium: "Contrôle ISO 9001",
-    agm: "Risque de non-conformité",
+    withUs: "Conformité assurée",
+    withoutUs: "Risque de non-conformité",
   },
   {
     label: "Interlocuteur",
-    lithium: "Chargé de mission dédié",
-    agm: "Multiples contacts",
+    withUs: "Chargé de mission dédié",
+    withoutUs: "0 contact dédié",
   },
   {
     label: "Préfinancement",
-    lithium: "Mandat financier possible",
-    agm: "Avance de frais à votre charge",
+    withUs: "Mandat financier possible",
+    withoutUs: "Avance de frais à votre charge",
   },
   {
     label: "Veille réglementaire",
-    lithium: "Incluse",
-    agm: "À votre charge",
+    withUs: "Incluse",
+    withoutUs: "À rechercher et à votre charge",
   },
 ] as const;
 

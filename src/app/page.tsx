@@ -2,12 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { FinancedWorks } from "@/components/FinancedWorks";
-import { Logo } from "@/components/Logo";
 import {
   IconBadge,
-  IconBluetooth,
   IconCheck,
-  IconCycle,
   IconEv,
   IconShield,
   IconSolar,
@@ -53,7 +50,7 @@ const whyItems = [
     text: "Un point de contact central pour simplifier vos démarches.",
   },
   {
-    icon: IconBluetooth,
+    icon: IconBadge,
     title: "Interlocuteur privilégié",
     text: "Un chargé de mission dédié, accompagnement personnalisé.",
   },
@@ -67,27 +64,29 @@ const whyItems = [
     title: "Rapidité & efficacité",
     text: "Obtenez rapidement vos primes pour travaux éligibles.",
   },
-  {
-    icon: IconCycle,
-    title: "Veille réglementaire",
-    text: "Restez informé des réglementations et bonnes pratiques.",
-  },
-  {
-    icon: IconBadge,
-    title: "ISO 9001 / COFRAC",
-    text: "Bureau de vérification documentaire certifié.",
-  },
-  {
-    icon: IconSolar,
-    title: "CEE & MaPrimeRénov’",
-    text: "Mandataire administratif et financier.",
-  },
 ];
 
 export default function HomePage() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqHome.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
   return (
     <>
-      <section className="relative min-h-[calc(100svh-4rem)] overflow-hidden text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <section className="relative -mt-[4.25rem] min-h-svh overflow-hidden text-white">
         <div className="absolute inset-0">
           <video
             className="hero-media absolute inset-0 h-full w-full object-cover object-center"
@@ -106,19 +105,16 @@ export default function HomePage() {
           </video>
         </div>
         <div
-          className="absolute inset-0 bg-[linear-gradient(105deg,rgba(10,18,16,0.92)_0%,rgba(10,18,16,0.72)_45%,rgba(10,18,16,0.35)_100%)]"
+          className="absolute inset-0 bg-[linear-gradient(105deg,rgba(11,22,40,0.92)_0%,rgba(11,22,40,0.72)_45%,rgba(11,22,40,0.35)_100%)]"
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(26,122,82,0.22),transparent_55%)]"
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(16,96,176,0.28),transparent_55%)]"
           aria-hidden
         />
 
-        <div className="container-site relative flex min-h-[calc(100svh-4rem)] flex-col justify-center py-20 md:py-28">
-          <div className="fade-up">
-            <Logo height={72} priority className="max-h-[4.5rem] drop-shadow-lg" />
-          </div>
-          <h1 className="fade-up-delay mt-6 max-w-[18ch] font-display text-[2.6rem] leading-[0.98] md:text-6xl lg:text-[4.75rem]">
+        <div className="container-site relative flex min-h-svh flex-col justify-center py-20 pt-28 md:py-28 md:pt-32">
+          <h1 className="fade-up max-w-[18ch] font-display text-[2.6rem] leading-[0.98] md:text-6xl lg:text-[4.75rem]">
             Vous réalisez les travaux. Nous valorisons vos primes CEE.
           </h1>
           <p className="fade-up-delay-2 mt-7 max-w-xl text-base leading-relaxed text-white/88 md:text-xl">
@@ -130,7 +126,7 @@ export default function HomePage() {
               <span className="text-cta">✓</span> Offre clé en main
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-cta">✓</span> Mandataire CEE & MaPrimeRénov’
+              <span className="text-cta">✓</span> Mandataire CEE
             </li>
             <li className="flex items-center gap-2">
               <span className="text-cta">✓</span> Paiement rapide des primes
@@ -183,9 +179,9 @@ export default function HomePage() {
               </p>
               <ul className="mt-6 space-y-2.5 text-sm font-medium">
                 {[
-                  "Bureau unique pour vos prises en charge CEE",
-                  "Mandataire CEE & MaPrimeRénov’",
-                  "Vérification documentaire ISO 9001 / COFRAC",
+                  "Conformité de vos pièces justificatives",
+                  "Mandataire administratif et financier",
+                  "Vérification documentaire rigoureuse",
                 ].map((item) => (
                   <li key={item} className="flex gap-2.5">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 bg-accent" />
@@ -240,7 +236,7 @@ export default function HomePage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-bg-inverse via-bg-inverse/45 to-bg-inverse/10" />
                     <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-7">
-                      <span className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-cta backdrop-blur-sm">
+                      <span className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-[var(--radius)] bg-white/10 text-lime backdrop-blur-sm">
                         <Icon className="h-5 w-5" />
                       </span>
                       <h3 className="font-display text-2xl md:text-3xl">
@@ -295,7 +291,7 @@ export default function HomePage() {
               de vos CEE.
             </p>
           </Reveal>
-          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {whyItems.map((item, i) => (
               <Reveal key={item.title} delay={i * 50}>
                 <div className="card-surface h-full p-6">
@@ -350,10 +346,10 @@ export default function HomePage() {
                     {row.label}
                   </div>
                   <div className="border-l border-white/10 bg-accent/10 p-4 text-center text-sm font-semibold md:p-5 md:text-base">
-                    {row.lithium}
+                    {row.withUs}
                   </div>
                   <div className="border-l border-white/10 p-4 text-center text-sm text-white/55 md:p-5 md:text-base">
-                    {row.agm}
+                    {row.withoutUs}
                   </div>
                 </div>
               ))}

@@ -2,19 +2,19 @@ import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { site } from "@/data/site";
 
-const certs = ["ISO 9001", "COFRAC", "CEE", "MaPrimeRénov’"];
+const certs = ["Mandataire CEE", "Contrôle documentaire", "Guichet unique"];
 
 export function Footer() {
   return (
     <footer className="bg-bg-inverse text-white">
       <div className="container-site section grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
-        <div className="lg:col-span-4">
+        <div className="lg:col-span-5">
           <Link href="/" className="inline-flex" aria-label={site.name}>
             <Logo height={56} className="max-h-14" />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
-            Votre bureau unique pour les prises en charge CEE. Transition
-            énergétique, conformité et primes accélérées.
+            Transition énergétique, conformité et primes accélérées pour vos
+            dossiers CEE.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             {site.socials.map((s) => (
@@ -23,7 +23,7 @@ export function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/70 transition hover:border-cta hover:text-cta"
+                className="rounded-[var(--radius-sm)] border border-white/15 px-4 py-2 text-xs font-medium text-white/70 transition hover:border-lime hover:text-lime"
               >
                 {s.label}
               </a>
@@ -41,35 +41,22 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="lg:col-span-2">
-          <p className="text-sm font-semibold tracking-wide">Nos solutions</p>
+        <div className="lg:col-span-3">
+          <p className="text-sm font-semibold tracking-wide">Liens</p>
           <ul className="mt-4 space-y-2.5 text-sm text-white/65">
             <li>
-              <Link href="/solutions" className="transition hover:text-cta">
-                CEE
+              <Link href="/qui-sommes-nous" className="transition hover:text-cta">
+                Qui sommes-nous ?
+              </Link>
+            </li>
+            <li>
+              <Link href="/guides" className="transition hover:text-cta">
+                Comprendre les CEE
               </Link>
             </li>
             <li>
               <Link href="/fiches-cee" className="transition hover:text-cta">
                 Fiches CEE
-              </Link>
-            </li>
-            <li>
-              <Link href="/coup-de-pouce" className="transition hover:text-cta">
-                Coup de Pouce
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/solutions/mandat-financier"
-                className="transition hover:text-cta"
-              >
-                Préfinancement
-              </Link>
-            </li>
-            <li>
-              <Link href="/qui-sommes-nous" className="transition hover:text-cta">
-                Qui sommes-nous ?
               </Link>
             </li>
             <li>
@@ -80,40 +67,10 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="lg:col-span-2">
-          <p className="text-sm font-semibold tracking-wide">Vous êtes ?</p>
-          <ul className="mt-4 space-y-2.5 text-sm text-white/65">
-            <li>
-              <Link
-                href="/pour-qui/installateurs-artisans"
-                className="transition hover:text-cta"
-              >
-                Artisans
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/pour-qui/gestionnaires-batiments"
-                className="transition hover:text-cta"
-              >
-                Gestionnaire de bâtiments
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/pour-qui/collectivites"
-                className="transition hover:text-cta"
-              >
-                Mairie ou collectivités
-              </Link>
-            </li>
-          </ul>
-        </div>
-
         <div className="lg:col-span-4">
           <p className="text-sm font-semibold tracking-wide">Un expert vous rappelle</p>
           <p className="mt-3 text-sm text-white/65">
-            Dossier CEE ou MaPrimeRénov’ — on vous recontacte rapidement.
+            Dossier CEE — on vous recontacte rapidement.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link href="/contact" className="btn btn-cta px-5 py-3">

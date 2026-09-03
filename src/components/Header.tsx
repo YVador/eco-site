@@ -1,15 +1,35 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Logo } from "@/components/Logo";
 import { mainNav, mainNavLinks } from "@/data/site";
 
 export function Header() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [desktopOpen, setDesktopOpen] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState<string | null>(null);
   const navRef = useRef<HTMLElement>(null);
+
+  const isHome = pathname === "/";
+  const solid = scrolled || open || !isHome;
+
+  useEffect(() => {
+    function onScroll() {
+      setScrolled(window.scrollY > 24);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    setOpen(false);
+    setDesktopOpen(null);
+  }, [pathname]);
 
   useEffect(() => {
     function onPointerDown(e: PointerEvent) {
@@ -25,11 +45,32 @@ export function Header() {
     if (!open) setMobileOpen(null);
   }, [open]);
 
+  const linkIdle = solid
+    ? "text-text-muted hover:text-text"
+    : "!text-white/85 hover:!text-white";
+  const linkActive = solid ? "text-text" : "!text-white";
+
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-bg/85 backdrop-blur-xl">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300 ${
+        solid
+          ? "border-b border-border/70 bg-bg/70 shadow-[var(--shadow-sm)] backdrop-blur-xl"
+          : "border-b border-transparent bg-transparent text-white"
+      }`}
+    >
       <div className="container-site flex h-[4.25rem] items-center justify-between gap-4">
-        <Link href="/" className="flex shrink-0 items-center" aria-label="Accueil">
-          <Logo height={44} priority className="max-h-11" />
+        <Link
+          href="/"
+          className="flex shrink-0 items-center"
+          aria-label="Accueil"
+        >
+          <Logo
+            height={44}
+            priority
+            className={`max-h-11 transition ${
+              solid ? "" : "drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)]"
+            }`}
+          />
         </Link>
 
         <nav
@@ -43,11 +84,15 @@ export function Header() {
               <div key={group.label} className="relative">
                 <button
                   type="button"
-                  className="inline-flex items-center gap-1.5 rounded-[var(--radius-sm)] px-3 py-2 text-sm font-medium text-text-muted transition hover:text-text"
+                  className={`inline-flex items-center gap-1.5 rounded-[var(--radius-sm)] px-3 py-2 text-sm font-medium transition ${
+                    isOpen ? linkActive : linkIdle
+                  }`}
                   aria-expanded={isOpen}
                   aria-haspopup="true"
                   onClick={() =>
-                    setDesktopOpen((v) => (v === group.label ? null : group.label))
+                    setDesktopOpen((v) =>
+                      v === group.label ? null : group.label,
+                    )
                   }
                   onMouseEnter={() => setDesktopOpen(group.label)}
                 >
@@ -64,12 +109,12 @@ export function Header() {
                     className="absolute left-0 top-full z-50 min-w-[16rem] pt-2"
                     onMouseLeave={() => setDesktopOpen(null)}
                   >
-                    <div className="rounded-[var(--radius)] border border-border bg-bg py-2 shadow-lg">
+                    <div className="rounded-[var(--radius)] border border-border bg-bg py-2 text-text shadow-lg min-w-[18rem] max-w-[22rem]">
                       {group.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2.5 text-sm font-medium text-text-muted transition hover:bg-bg-muted hover:text-text"
+                          className="block px-4 py-2.5 text-sm font-medium leading-snug !text-text-muted transition hover:bg-bg-muted hover:!text-text"
                           onClick={() => setDesktopOpen(null)}
                         >
                           {child.label}
@@ -85,7 +130,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-[var(--radius-sm)] px-3 py-2 text-sm font-medium text-text-muted transition hover:text-text"
+              className={`rounded-[var(--radius-sm)] px-3 py-2 text-sm font-medium transition ${linkIdle}`}
             >
               {item.label}
             </Link>
@@ -101,7 +146,11 @@ export function Header() {
           </Link>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-[var(--radius-sm)] border border-border lg:hidden"
+            className={`inline-flex h-10 w-10 items-center justify-center rounded-[var(--radius-sm)] border transition lg:hidden ${
+              solid
+                ? "border-border text-text"
+                : "border-white/35 text-white"
+            }`}
             aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -109,13 +158,19 @@ export function Header() {
             <span className="sr-only">Menu</span>
             <span className="flex flex-col gap-1.5">
               <span
-                className={`block h-0.5 w-5 bg-text transition ${open ? "translate-y-2 rotate-45" : ""}`}
+                className={`block h-0.5 w-5 transition ${
+                  solid ? "bg-text" : "bg-white"
+                } ${open ? "translate-y-2 rotate-45" : ""}`}
               />
               <span
-                className={`block h-0.5 w-5 bg-text transition ${open ? "opacity-0" : ""}`}
+                className={`block h-0.5 w-5 transition ${
+                  solid ? "bg-text" : "bg-white"
+                } ${open ? "opacity-0" : ""}`}
               />
               <span
-                className={`block h-0.5 w-5 bg-text transition ${open ? "-translate-y-2 -rotate-45" : ""}`}
+                className={`block h-0.5 w-5 transition ${
+                  solid ? "bg-text" : "bg-white"
+                } ${open ? "-translate-y-2 -rotate-45" : ""}`}
               />
             </span>
           </button>
@@ -124,21 +179,31 @@ export function Header() {
 
       {open && (
         <div className="border-t border-border bg-bg lg:hidden">
-          <nav className="container-site flex flex-col gap-1 py-4" aria-label="Mobile">
+          <nav
+            className="container-site flex flex-col gap-1 py-4"
+            aria-label="Mobile"
+          >
             {mainNav.map((group) => {
               const isOpen = mobileOpen === group.label;
               return (
-                <div key={group.label} className="border-b border-border/60 py-1">
+                <div
+                  key={group.label}
+                  className="border-b border-border/60 py-1"
+                >
                   <button
                     type="button"
                     className="flex w-full items-center justify-between py-3 text-left text-base font-medium"
                     aria-expanded={isOpen}
                     onClick={() =>
-                      setMobileOpen((v) => (v === group.label ? null : group.label))
+                      setMobileOpen((v) =>
+                        v === group.label ? null : group.label,
+                      )
                     }
                   >
                     {group.label}
-                    <span className={`text-xs transition ${isOpen ? "rotate-180" : ""}`}>
+                    <span
+                      className={`text-xs transition ${isOpen ? "rotate-180" : ""}`}
+                    >
                       ▾
                     </span>
                   </button>

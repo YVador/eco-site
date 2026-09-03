@@ -10,8 +10,8 @@ const steps = [
     key: "usage",
     title: "Vous êtes ?",
     options: [
-      { value: "installateurs-artisans", label: "Artisans" },
-      { value: "gestionnaires-batiments", label: "Gestionnaire de bâtiments" },
+      { value: "installateurs-artisans", label: "Artisans / installateurs" },
+      { value: "gestionnaires-batiments", label: "Bâtiments tertiaire ou industriel" },
       { value: "collectivites", label: "Mairie ou collectivités" },
       { value: "entreprises-emettrices", label: "Entreprise émettrice" },
       { value: "fournisseurs-energie", label: "Fournisseur d’énergie" },

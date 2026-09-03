@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Qui sommes-nous ?",
   description:
-    "ECO INGENIERIE, partenaire clé de la transition énergétique et de la valorisation de vos CEE. Expertise, offre clé en main, mandats CEE & MaPrimeRénov’.",
+    "ECO INGENIERIE, partenaire clé de la transition énergétique et de la valorisation de vos CEE. Expertise, offre clé en main, mandats CEE.",
 };
 
 const valeurs = [
@@ -47,7 +47,7 @@ const missions = [
   },
   {
     title: "La gestion des mandats",
-    text: "Être mandataire administratif et financier dans le cadre des CEE et de MaPrimeRénov’.",
+    text: "Être mandataire administratif et financier dans le cadre des CEE.",
   },
 ];
 
@@ -112,8 +112,8 @@ export default function QuiSommesNousPage() {
           </h2>
           <p className="mt-5 max-w-3xl text-lg text-text-muted">
             ECO INGENIERIE est un représentant officiel, bureau de vérification
-            documentaire certifié selon la norme ISO 9001 par une entité
-            reconnue par le COFRAC.
+            documentaire dédié à la conformité et à la valorisation de vos
+            dossiers CEE.
           </p>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {missions.map((m) => (
@@ -129,7 +129,7 @@ export default function QuiSommesNousPage() {
       <section className="section bg-bg-inverse text-white">
         <div className="container-site">
           <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-cta">
-            Mandataire CEE & MaPrimeRénov’
+            Mandataire CEE
           </p>
           <h2 className="mt-3 max-w-3xl font-display text-3xl md:text-5xl">
             Administratif et financier : on avance avec vous

@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
         destination: "/demande",
         permanent: true,
       },
+      {
+        source: "/guides/mandataire-cee-maprimerenov",
+        destination: "/guides/mandataire-cee",
+        permanent: true,
+      },
     ];
   },
 };

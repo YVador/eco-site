@@ -1,12 +1,4 @@
 import { AnimatedCounter } from "@/components/AnimatedCounter";
-import {
-  IconBadge,
-  IconCheck,
-  IconCycle,
-  IconShield,
-  IconSupport,
-  IconTruck,
-} from "@/components/Icons";
 import { trustItems } from "@/data/site";
 
 const stats = [
@@ -17,16 +9,17 @@ const stats = [
     detail: "Conseil, dossiers et valorisation",
   },
   {
-    value: 100,
-    suffix: "%",
-    label: "dossiers contrôlés",
-    detail: "Vérification documentaire systématique",
+    value: 3,
+    suffix: " TWhc",
+    label: "primes valorisées",
+    detail: "Volume cumulé accompagné",
   },
   {
-    value: 4,
-    suffix: " étapes",
-    label: "parcours clé en main",
-    detail: "Du dépôt au paiement de la prime",
+    value: 24.5,
+    suffix: " M€",
+    label: "primes versées",
+    decimals: 1,
+    detail: "Valorisation financière pour nos partenaires",
   },
   {
     value: 1,
@@ -35,16 +28,6 @@ const stats = [
     detail: "Guichet unique, suivi personnalisé",
   },
 ] as const;
-
-const trustIcons = [
-  IconShield,
-  IconBadge,
-  IconCheck,
-  IconSupport,
-  IconTruck,
-  IconCycle,
-  IconSupport,
-];
 
 type ProofStripProps = {
   /** Version courte pour pages intérieures */
@@ -78,7 +61,7 @@ export function ProofStrip({ compact = false }: ProofStripProps) {
       aria-label="Preuves et chiffres clés"
     >
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(26,122,82,0.18),transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,96,176,0.22),transparent_55%)]"
         aria-hidden
       />
       <div
@@ -97,8 +80,8 @@ export function ProofStrip({ compact = false }: ProofStripProps) {
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-white/55 md:text-right">
-            Mandataire CEE & MaPrimeRénov’ — contrôle ISO 9001, suivi dédié,
-            primes traitées sans friction.
+            Mandataire CEE — contrôle documentaire, suivi dédié, primes
+            traitées sans friction.
           </p>
         </div>
 
@@ -109,7 +92,11 @@ export function ProofStrip({ compact = false }: ProofStripProps) {
               className="bg-bg-inverse px-5 py-8 md:px-7 md:py-10"
             >
               <p className="font-display text-4xl leading-none text-cta md:text-5xl lg:text-[3.25rem]">
-                <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+                <AnimatedCounter
+                  value={stat.value}
+                  suffix={stat.suffix}
+                  decimals={"decimals" in stat ? stat.decimals : 0}
+                />
               </p>
               <p className="mt-4 text-sm font-semibold capitalize tracking-tight text-white md:text-base">
                 {stat.label}
@@ -120,26 +107,6 @@ export function ProofStrip({ compact = false }: ProofStripProps) {
             </div>
           ))}
         </div>
-
-        <ul className="mt-10 flex flex-wrap items-center gap-x-2 gap-y-3 md:gap-x-1">
-          {trustItems.map((item, i) => {
-            const Icon = trustIcons[i] ?? IconCheck;
-            return (
-              <li key={item.label} className="contents">
-                {i > 0 && (
-                  <span
-                    className="mx-1 hidden h-1 w-1 rounded-full bg-white/25 md:mx-2 md:inline-block"
-                    aria-hidden
-                  />
-                )}
-                <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-xs font-medium text-white/75 backdrop-blur-sm transition hover:border-cta/30 hover:text-white md:text-[13px]">
-                  <Icon className="h-3.5 w-3.5 text-cta" />
-                  {item.short}
-                </span>
-              </li>
-            );
-          })}
-        </ul>
       </div>
     </section>
   );

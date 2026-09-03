@@ -19,8 +19,8 @@ export default function SolutionsPage() {
             Solutions clés en main pour vos CEE
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-text-muted">
-            ECO INGENIERIE, votre bureau unique pour les demandes de prise en
-            charge CEE — du conseil à la mise en œuvre.
+            Valorisation, préfinancement, gestion des dossiers et contrôle
+            documentaire — un accompagnement CEE de bout en bout.
           </p>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { guides } from "@/data/site";
@@ -11,25 +12,29 @@ const bodies: Record<
 > = {
   "quest-ce-quun-cee": {
     intro:
-      "Un Certificat d’Économies d’Énergie atteste de la réalisation d’économies d’énergie suite à des travaux de rénovation énergétique.",
+      "Qu’est-ce que le dispositif des Certificats d’Économies d’Énergie (CEE) ?",
     sections: [
       {
-        h: "À quoi servent les CEE ?",
-        p: "Ils valorisent les actions d’économies d’énergie et permettent aux obligés de remplir leurs obligations réglementaires.",
+        h: "Un levier majeur pour la performance énergétique",
+        p: "Le dispositif des Certificats d’Économies d’Énergie (CEE), également appelé « primes CEE » ou « primes énergie », constitue un levier majeur pour financer les actions en faveur de la performance énergétique. Créé dans le cadre de la loi POPE (Programme fixant les Orientations de la Politique Énergétique) du 13 juillet 2005, ce mécanisme a pour objectif d’encourager la réduction des consommations d’énergie sur l’ensemble du territoire.",
       },
       {
-        h: "Qui est concerné ?",
-        p: "Entreprises, collectivités, fournisseurs d’énergie, bailleurs, installateurs et, dans certains cas, particuliers.",
+        h: "Les obligations des fournisseurs d’énergie",
+        p: "Depuis 2006, l’État impose aux fournisseurs d’énergie et de carburants, appelés « Obligés », de contribuer activement à la réalisation d’économies d’énergie. Ces acteurs doivent atteindre des objectifs réglementaires précis sous peine de sanctions financières. Pour remplir leurs obligations, ils peuvent financer des travaux d’amélioration énergétique réalisés sur leurs propres installations, mais également auprès des particuliers, des entreprises et des collectivités.",
+      },
+      {
+        h: "Des primes pour accélérer la rénovation",
+        p: "Les économies d’énergie générées par ces travaux sont ensuite valorisées sous forme de primes CEE, également connues sous les appellations « éco-primes », « primes énergie » ou « primes éco-énergie ». Véritable outil d’accompagnement financier, le dispositif CEE permet aux entreprises et aux collectivités d’accélérer leurs projets de rénovation énergétique. Il facilite l’investissement dans des équipements plus performants, contribue à réduire les consommations d’énergie et permet ainsi de diminuer durablement les dépenses énergétiques.",
       },
       {
         h: "Le rôle d’ECO INGENIERIE",
-        p: "Nous structurons, contrôlons et valorisons vos dossiers pour maximiser vos primes en toute conformité.",
+        p: "Nous structurons, contrôlons et valorisons vos dossiers pour maximiser vos primes en toute conformité — du cadrage à l’obtention de la prime.",
       },
     ],
   },
-  "mandataire-cee-maprimerenov": {
+  "mandataire-cee": {
     intro:
-      "ECO INGENIERIE est mandataire CEE et MaPrimeRénov’. Nous aidons les bénéficiaires dans leurs démarches et l’avance de frais.",
+      "ECO INGENIERIE est mandataire CEE. Nous aidons les bénéficiaires dans leurs démarches et l’avance de frais.",
     sections: [
       {
         h: "Mandataire administratif",
@@ -51,7 +56,7 @@ const bodies: Record<
     sections: [
       {
         h: "1. Dépôt de demande",
-        p: "Transmettez votre demande de prise en charge à notre bureau unique.",
+        p: "Transmettez votre demande de prise en charge à notre équipe.",
       },
       {
         h: "2. Prise de contact",
@@ -94,6 +99,22 @@ export default async function GuidePage({ params }: Props) {
         </p>
         <h1 className="mt-2 font-display text-4xl md:text-5xl">{guide.title}</h1>
         <p className="mt-6 text-lg text-text-muted">{body.intro}</p>
+        {slug === "quest-ce-quun-cee" && (
+          <figure className="mt-10 overflow-hidden rounded-[var(--radius-lg)] border border-border bg-surface">
+            <Image
+              src="/media/acteurs-cee.png"
+              alt="Les acteurs des CEE : un écosystème engagé pour la transition énergétique"
+              width={1650}
+              height={953}
+              className="h-auto w-full"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+            <figcaption className="border-t border-border px-4 py-3 text-sm text-text-muted">
+              Les acteurs des CEE — ECO INGENIERIE, mandataire auprès des
+              Obligés.
+            </figcaption>
+          </figure>
+        )}
         <div className="mt-10 space-y-8">
           {body.sections.map((s) => (
             <section key={s.h}>

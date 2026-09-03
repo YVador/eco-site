@@ -14,8 +14,7 @@ export default function Page() {
     >
       <p>
         Les données collectées via formulaires (contact, demande, newsletter)
-        sont utilisées pour répondre à vos demandes relatives aux CEE et
-        MaPrimeRénov’.
+        sont utilisées pour répondre à vos demandes relatives aux CEE.
       </p>
       <p>
         Responsable de traitement : ECO INGENIERIE — contact@eco-ingenierie.fr

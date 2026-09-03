@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Certifications",
   description:
-    "ECO INGENIERIE : bureau de vérification documentaire certifié ISO 9001, entité reconnue COFRAC, mandataire CEE & MaPrimeRénov’.",
+    "ECO INGENIERIE : mandataire CEE, contrôle documentaire et cadre qualité pour sécuriser vos dossiers.",
 };
 
 const missions = [
@@ -19,18 +19,18 @@ const missions = [
   },
   {
     title: "Gestion des mandats",
-    text: "Mandataire administratif et financier dans le cadre des CEE et de MaPrimeRénov’.",
+    text: "Mandataire administratif et financier dans le cadre des CEE.",
   },
 ];
 
 const garanties = [
   {
-    title: "ISO 9001",
-    text: "Bureau de vérification documentaire certifié selon la norme ISO 9001.",
+    title: "Mandataire CEE",
+    text: "Accompagnement administratif et financier pour sécuriser vos primes énergie.",
   },
   {
-    title: "Reconnaissance COFRAC",
-    text: "Certification délivrée par une entité reconnue par le COFRAC.",
+    title: "Vérification documentaire",
+    text: "Bureau de contrôle dédié : chaque pièce est vérifiée avant dépôt.",
   },
   {
     title: "Contrôle systématique",
@@ -52,9 +52,9 @@ export default function CertificationsPage() {
             Exigence & conformité
           </h1>
           <p className="mt-6 text-lg text-text-muted">
-            ECO INGENIERIE est un représentant officiel, souvent désigné comme
-            bureau de vérification documentaire certifié ISO 9001 par une
-            entité reconnue par le COFRAC.
+            ECO INGENIERIE est un représentant officiel dédié au traitement
+            accéléré de vos dossiers CEE, avec un contrôle documentaire
+            systématique.
           </p>
         </div>
       </section>

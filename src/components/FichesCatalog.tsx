@@ -58,7 +58,7 @@ export function FichesCatalog() {
               key={s.id}
               type="button"
               onClick={() => setSector(s.id)}
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
+              className={`rounded-[var(--radius)] border px-4 py-2 text-sm font-medium transition ${
                 active
                   ? "border-cta bg-cta text-white"
                   : "border-border bg-surface text-text-muted hover:border-accent hover:text-text"

@@ -54,11 +54,11 @@ export function MethodSteps() {
 
       <div className="relative flex min-h-[320px] flex-col overflow-hidden rounded-[var(--radius-lg)] bg-bg-inverse p-7 text-white md:p-9">
         <div
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_80%_0%,rgba(26,95,180,0.28),transparent_55%)]"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_80%_0%,rgba(16,96,176,0.32),transparent_55%)]"
           aria-hidden
         />
         <div className="relative flex items-start justify-between gap-4">
-          <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-white/75 uppercase">
+          <span className="rounded-[var(--radius-sm)] border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-semibold tracking-[0.14em] text-white/75 uppercase">
             Étape {step.step} · {step.tag}
           </span>
           <span
