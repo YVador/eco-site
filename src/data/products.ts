@@ -28,7 +28,7 @@ export const products: Solution[] = [
     shortDescription:
       "Prise en charge clé en main : dépôt, suivi auprès de l’obligé et paiement de la prime.",
     description:
-      "ECO INGENIERIE, votre partenaire expert dans la valorisation des Certificats d’Économies d’Énergie. Nous maximisons la valeur de vos CEE tout en simplifiant vos démarches administratives, avec une veille réglementaire permanente.",
+      "ECO INGENIERIE, votre partenaire expert dans la valorisation des certificats d’économies d’énergie. Nous maximisons la valeur de vos CEE tout en simplifiant vos démarches administratives, avec une veille réglementaire permanente.",
     image: "/media/guide-valorisation.jpg",
     audiences: [
       "entreprises-emettrices",

@@ -6,13 +6,13 @@ import { guides } from "@/data/site";
 export const metadata: Metadata = {
   title: "Les CEE",
   description:
-    "Comprendre le dispositif des Certificats d’Économies d’Énergie : éligibilité, Coups de pouce, Obligés et rôle d’ECO INGENIERIE.",
+    "Comprendre le dispositif des certificats d’économies d’énergie : éligibilité, Coups de pouce, Obligés et rôle d’ECO INGENIERIE.",
 };
 
 const sectors = [
   {
     title: "Secteur tertiaire",
-    text: "Travaux d’isolation, installation de pompes à chaleur, mise en place d’un système de Gestion Technique du Bâtiment (GTB), amélioration des équipements énergétiques, etc.",
+    text: "Travaux d’isolation, installation de pompes à chaleur, mise en place d’un système de gestion technique du bâtiment (GTB), amélioration des équipements énergétiques, etc.",
   },
   {
     title: "Secteur industriel",
@@ -24,7 +24,7 @@ const sectors = [
   },
   {
     title: "Secteur résidentiel",
-    text: "Pompe à chaleur type Air/Air, isolation de combles ou de toiture.",
+    text: "Pompe à chaleur type air/air, isolation de combles ou de toiture.",
   },
 ] as const;
 
@@ -35,15 +35,15 @@ export default function GuidesPage() {
         <div className="container-site max-w-3xl">
           <p className="eyebrow">Les CEE</p>
           <h1 className="mt-2 font-display text-4xl md:text-6xl">
-            Qu’est-ce que le dispositif des Certificats d’Économies d’Énergie
+            Qu’est-ce que le dispositif des certificats d’économies d’énergie
             (CEE)&nbsp;?
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-text-muted">
-            Le dispositif des Certificats d’Économies d’Énergie (CEE), également
+            Le dispositif des certificats d’économies d’énergie (CEE), également
             appelé «&nbsp;primes CEE&nbsp;» ou «&nbsp;primes énergie&nbsp;»,
             constitue un levier majeur pour financer les actions en faveur de la
             performance énergétique. Créé dans le cadre de la loi POPE
-            (Programme fixant les Orientations de la Politique Énergétique) du
+            (programme fixant les orientations de la politique énergétique) du
             13 juillet 2005, ce mécanisme a pour objectif d’encourager la
             réduction des consommations d’énergie sur l’ensemble du territoire.
           </p>
@@ -134,7 +134,7 @@ export default function GuidesPage() {
             Des bonifications pour accélérer certaines opérations
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-white/75">
-            Dans le cadre du dispositif des Certificats d’Économies d’Énergie,
+            Dans le cadre du dispositif des certificats d’économies d’énergie,
             certains types d’opérations peuvent faire l’objet de bonifications
             appelées «&nbsp;Coups de pouce&nbsp;». Ces dispositifs s’inscrivent
             dans le mécanisme des CEE et ont pour objectif d’encourager la
@@ -159,11 +159,11 @@ export default function GuidesPage() {
         <div className="container-site max-w-3xl">
           <p className="eyebrow">Cadre réglementaire</p>
           <h2 className="mt-3 font-display text-3xl md:text-5xl">
-            Un dispositif soutenu par le Gouvernement
+            Un dispositif soutenu par le gouvernement
           </h2>
           <div className="mt-6 space-y-4 text-lg leading-relaxed text-text-muted">
             <p>
-              Le dispositif des Certificats d’Économies d’Énergie s’inscrit dans
+              Le dispositif des certificats d’économies d’énergie s’inscrit dans
               une démarche gouvernementale visant à accélérer la transition
               énergétique tout en encourageant les acteurs publics et privés à
               réduire leur consommation d’énergie.
@@ -175,8 +175,8 @@ export default function GuidesPage() {
               générer des économies d’énergie.
             </p>
             <p>
-              Afin d’encadrer ce mécanisme, le Pôle National des Certificats
-              d’Économies d’Énergie (PNCEE) définit des règles précises ainsi que
+              Afin d’encadrer ce mécanisme, le Pôle national des certificats
+              d’économies d’énergie (PNCEE) définit des règles précises ainsi que
               des critères d’éligibilité à travers des fiches d’opérations
               standardisées.
             </p>
@@ -189,7 +189,7 @@ export default function GuidesPage() {
             <p>
               L’unité de mesure utilisée pour quantifier les économies d’énergie
               est le <strong className="text-text">kWh cumac</strong> («&nbsp;cumulés
-              et actualisés&nbsp;»). Un Certificat d’Économie d’Énergie
+              et actualisés&nbsp;»). Un certificat d’économie d’énergie
               correspond ainsi à 1&nbsp;kWh cumac d’énergie économisée.
             </p>
             <p>
@@ -201,7 +201,7 @@ export default function GuidesPage() {
               énergétique.
             </p>
             <p>
-              Fort de ces résultats, le Gouvernement a prolongé le dispositif
+              Fort de ces résultats, le gouvernement a prolongé le dispositif
               avec une cinquième période couvrant les années 2022 à 2025,
               confirmant ainsi son rôle central dans la transition énergétique.
             </p>

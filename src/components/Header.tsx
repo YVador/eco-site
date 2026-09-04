@@ -65,9 +65,9 @@ export function Header() {
           aria-label="Accueil"
         >
           <Logo
-            height={44}
+            height={54}
             priority
-            className={`max-h-11 transition ${
+            className={`max-h-[3.4rem] transition ${
               solid ? "" : "drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)]"
             }`}
           />

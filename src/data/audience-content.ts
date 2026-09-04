@@ -21,7 +21,7 @@ export const audiencePages: Record<string, AudiencePageContent> = {
     headline:
       "Transformez vos chantiers en opportunités supplémentaires grâce aux CEE",
     intro: [
-      "Vous réalisez des travaux de rénovation énergétique ? Valorisez les Certificats d’Économies d’Énergie (CEE) générés par vos chantiers et proposez à vos clients une solution simple pour réduire le coût de leurs travaux.",
+      "Vous réalisez des travaux de rénovation énergétique ? Valorisez les certificats d’économies d’énergie (CEE) générés par vos chantiers et proposez à vos clients une solution simple pour réduire le coût de leurs travaux.",
       "Nous vous accompagnons à chaque étape, de l’identification du chantier jusqu’à la valorisation de vos CEE.",
     ],
     ctas: [
@@ -161,7 +161,7 @@ export const audiencePages: Record<string, AudiencePageContent> = {
       "Transformez vos projets de rénovation énergétique en opportunités de financement",
     intro: [
       "Vous êtes propriétaire, bailleur, syndic, foncière, administrateur de biens ou gestionnaire d’un parc immobilier ?",
-      "Vos bâtiments représentent un potentiel important d’économies d’énergie. Grâce au dispositif des Certificats d’Économies d’Énergie (CEE), certaines opérations de rénovation peuvent bénéficier d’une valorisation financière.",
+      "Vos bâtiments représentent un potentiel important d’économies d’énergie. Grâce au dispositif des certificats d’économies d’énergie (CEE), certaines opérations de rénovation peuvent bénéficier d’une valorisation financière.",
       "En tant que mandataire CEE, nous vous accompagnons de l’identification des opérations jusqu’à la constitution et au suivi de vos dossiers.",
       "Votre patrimoine. Vos travaux. Nous valorisons vos CEE.",
     ],
@@ -215,9 +215,9 @@ export const audiencePages: Record<string, AudiencePageContent> = {
         ],
       },
       {
-        title: "Décret Tertiaire : faites des CEE un levier de votre stratégie énergétique",
+        title: "Décret tertiaire : faites des CEE un levier de votre stratégie énergétique",
         paragraphs: [
-          "Pour les bâtiments tertiaires concernés par le dispositif Éco Énergie Tertiaire, la réduction des consommations devient un enjeu réglementaire majeur.",
+          "Pour les bâtiments tertiaires concernés par le dispositif Éco Énergie tertiaire, la réduction des consommations devient un enjeu réglementaire majeur.",
           "Le dispositif concerne notamment les bâtiments, parties de bâtiments ou ensembles de bâtiments à usage tertiaire dont la surface de plancher est supérieure ou égale à 1 000 m². Il fixe une trajectoire de réduction des consommations d’énergie finale d’au moins 40 % en 2030, 50 % en 2040 et 60 % en 2050, par rapport à une année de référence. Les consommations sont suivies annuellement via la plateforme OPERAT.",
           "Vos obligations de performance énergétique peuvent devenir une feuille de route pour vos travaux et un levier pour mobiliser les CEE.",
         ],
@@ -378,10 +378,10 @@ export const audiencePages: Record<string, AudiencePageContent> = {
   collectivites: {
     eyebrow: "Mairies et collectivités",
     headline:
-      "Accélérez vos projets de rénovation énergétique grâce aux Certificats d’Économies d’Énergie",
+      "Accélérez vos projets de rénovation énergétique grâce aux certificats d’économies d’énergie",
     intro: [
       "Les collectivités territoriales sont aujourd’hui confrontées à un double enjeu : réduire durablement leurs consommations énergétiques tout en maîtrisant leurs budgets.",
-      "ECO Ingénierie accompagne les mairies et collectivités dans la valorisation de leurs projets d’efficacité énergétique grâce au dispositif des Certificats d’Économies d’Énergie (CEE).",
+      "ECO INGENIERIE accompagne les mairies et collectivités dans la valorisation de leurs projets d’efficacité énergétique grâce au dispositif des certificats d’économies d’énergie (CEE).",
       "Notre objectif : vous permettre de financer vos travaux, simplifier vos démarches et sécuriser la valorisation de vos opérations.",
     ],
     ctas: [
@@ -393,7 +393,7 @@ export const audiencePages: Record<string, AudiencePageContent> = {
         title: "Un accompagnement CEE adapté aux acteurs publics",
         paragraphs: [
           "Les projets énergétiques des collectivités nécessitent une approche rigoureuse et un accompagnement adapté aux contraintes du secteur public.",
-          "ECO Ingénierie vous accompagne à chaque étape de vos projets :",
+          "ECO INGENIERIE vous accompagne à chaque étape de vos projets :",
           "Vous bénéficiez d’un interlocuteur dédié pour simplifier la gestion de vos dossiers CEE.",
         ],
         bullets: [
@@ -408,7 +408,7 @@ export const audiencePages: Record<string, AudiencePageContent> = {
         title: "Valorisez vos travaux d’efficacité énergétique",
         paragraphs: [
           "De nombreux projets portés par les collectivités peuvent être valorisés dans le cadre du dispositif CEE :",
-          "ECO Ingénierie vous aide à identifier les opportunités de financement liées à vos projets.",
+          "ECO INGENIERIE vous aide à identifier les opportunités de financement liées à vos projets.",
         ],
         bullets: [
           "rénovation énergétique des bâtiments publics ;",
@@ -436,7 +436,7 @@ export const audiencePages: Record<string, AudiencePageContent> = {
       {
         title: "Un partenaire engagé aux côtés des collectivités",
         paragraphs: [
-          "Chez ECO Ingénierie, nous privilégions une approche basée sur la proximité, la réactivité et la transparence.",
+          "Chez ECO INGENIERIE, nous privilégions une approche basée sur la proximité, la réactivité et la transparence.",
           "Nous travaillons aux côtés des collectivités pour transformer leurs projets d’efficacité énergétique en véritables leviers de réduction des coûts et de transition énergétique.",
           "Vous avez un projet énergétique ? Nos experts vous accompagnent pour identifier les opérations éligibles et les solutions de valorisation adaptées à votre collectivité.",
         ],

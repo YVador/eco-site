@@ -114,17 +114,15 @@ export default function HomePage() {
         />
 
         <div className="container-site relative flex min-h-svh flex-col justify-center py-20 pt-28 md:py-28 md:pt-32">
-          <h1 className="fade-up max-w-[18ch] font-display text-[2.6rem] leading-[0.98] md:text-6xl lg:text-[4.75rem]">
+          <h1 className="fade-up max-w-[24ch] font-display text-[2.4rem] leading-[0.98] md:text-4xl lg:text-[3.15rem]">
             Vous réalisez les travaux. Nous valorisons vos primes CEE.
           </h1>
           <p className="fade-up-delay-2 mt-7 max-w-xl text-base leading-relaxed text-white/88 md:text-xl">
-            Mandataire CEE, ECO Ingénierie accompagne les installateurs dans la
-            gestion, la conformité et la valorisation de leurs dossiers CEE.
+            Mandataire CEE, ECO INGENIERIE accompagne les installateurs, les
+            mairies ou les collectivités dans la gestion, la conformité et la
+            valorisation de leurs dossiers CEE.
           </p>
           <ul className="fade-up-delay-2 mt-8 flex flex-col gap-2.5 text-sm font-medium text-white/90 sm:flex-row sm:flex-wrap sm:gap-x-8">
-            <li className="flex items-center gap-2">
-              <span className="text-cta">✓</span> Offre clé en main
-            </li>
             <li className="flex items-center gap-2">
               <span className="text-cta">✓</span> Mandataire CEE
             </li>

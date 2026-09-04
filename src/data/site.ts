@@ -111,7 +111,7 @@ export const mainNav = [
         href: "/solutions/prise-en-charge-cee",
         label: "Valorisation de primes CEE",
       },
-      { href: "/coup-de-pouce", label: "Coup de Pouce" },
+      { href: "/coup-de-pouce", label: "Coup de pouce" },
       { href: "/solutions/mandat-financier", label: "Préfinancement" },
       {
         href: "/solutions/accompagnement-administratif",
@@ -230,7 +230,7 @@ export const testimonials = [
 export const faqHome = [
   {
     q: "Qu’est-ce qu’un CEE ?",
-    a: "Un Certificat d’Économies d’Énergie atteste de la réalisation d’économies d’énergie suite à des travaux de rénovation énergétique.",
+    a: "Un certificat d’économies d’énergie atteste de la réalisation d’économies d’énergie suite à des travaux de rénovation énergétique.",
   },
   {
     q: "Pourquoi choisir ECO INGENIERIE ?",

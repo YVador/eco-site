@@ -98,7 +98,7 @@ export function ProofStrip({ compact = false }: ProofStripProps) {
                   decimals={"decimals" in stat ? stat.decimals : 0}
                 />
               </p>
-              <p className="mt-4 text-sm font-semibold capitalize tracking-tight text-white md:text-base">
+              <p className="mt-4 text-sm font-semibold tracking-tight text-white md:text-base">
                 {stat.label}
               </p>
               <p className="mt-1.5 text-xs leading-relaxed text-white/45 md:text-sm">

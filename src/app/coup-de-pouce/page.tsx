@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Coup de pouce CEE",
   description:
-    "Les Coups de pouce CEE : bonifications du dispositif des Certificats d’Économies d’Énergie avec ECO INGENIERIE.",
+    "Les Coups de pouce CEE : bonifications du dispositif des certificats d’économies d’énergie avec ECO INGENIERIE.",
 };
 
 const regles = [
@@ -18,11 +18,11 @@ const regles = [
 
 const dispositifs = [
   {
-    title: "Coup de pouce Chauffage",
+    title: "Coup de pouce chauffage",
     text: "Vise certaines opérations de remplacement d’équipements de chauffage existants par des solutions plus performantes.",
   },
   {
-    title: "Coup de pouce Bâtiment Tertiaire",
+    title: "Coup de pouce Bâtiment tertiaire",
     text: "Destiné à accompagner certaines opérations d’économies d’énergie dans les bâtiments du secteur tertiaire.",
   },
 ] as const;
@@ -38,7 +38,7 @@ export default function CoupDePoucePage() {
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-text-muted">
             Les Coups de pouce sont des dispositifs spécifiques intégrés au
-            mécanisme des Certificats d’Économies d’Énergie (CEE). Ils ont été
+            mécanisme des certificats d’économies d’énergie (CEE). Ils ont été
             mis en place par l’État afin d’accélérer la réalisation de certaines
             opérations d’économies d’énergie considérées comme prioritaires.
           </p>

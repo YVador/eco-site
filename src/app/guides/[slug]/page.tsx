@@ -12,11 +12,11 @@ const bodies: Record<
 > = {
   "quest-ce-quun-cee": {
     intro:
-      "Qu’est-ce que le dispositif des Certificats d’Économies d’Énergie (CEE) ?",
+      "Qu’est-ce que le dispositif des certificats d’économies d’énergie (CEE) ?",
     sections: [
       {
         h: "Un levier majeur pour la performance énergétique",
-        p: "Le dispositif des Certificats d’Économies d’Énergie (CEE), également appelé « primes CEE » ou « primes énergie », constitue un levier majeur pour financer les actions en faveur de la performance énergétique. Créé dans le cadre de la loi POPE (Programme fixant les Orientations de la Politique Énergétique) du 13 juillet 2005, ce mécanisme a pour objectif d’encourager la réduction des consommations d’énergie sur l’ensemble du territoire.",
+        p: "Le dispositif des certificats d’économies d’énergie (CEE), également appelé « primes CEE » ou « primes énergie », constitue un levier majeur pour financer les actions en faveur de la performance énergétique. Créé dans le cadre de la loi POPE (programme fixant les orientations de la politique énergétique) du 13 juillet 2005, ce mécanisme a pour objectif d’encourager la réduction des consommations d’énergie sur l’ensemble du territoire.",
       },
       {
         h: "Les obligations des fournisseurs d’énergie",

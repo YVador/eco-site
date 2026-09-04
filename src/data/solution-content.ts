@@ -17,7 +17,7 @@ export const solutionRichContent: Record<
       {
         title: "Votre métier est de réaliser les travaux",
         paragraphs: [
-          "Vous réalisez des travaux de rénovation énergétique auprès de vos clients ? ECO INGENIERIE vous accompagne dans la valorisation des Certificats d’Économies d’Énergie (CEE) générés par vos opérations.",
+          "Vous réalisez des travaux de rénovation énergétique auprès de vos clients ? ECO INGENIERIE vous accompagne dans la valorisation des certificats d’économies d’énergie (CEE) générés par vos opérations.",
           "Grâce à notre expertise du dispositif CEE, nous vous aidons à identifier les opérations éligibles, constituer vos dossiers et optimiser la valorisation financière de vos chantiers.",
           "Votre métier est de réaliser les travaux. Notre métier est de valoriser les économies d’énergie associées.",
         ],
@@ -25,7 +25,7 @@ export const solutionRichContent: Record<
       {
         title: "Faites des CEE un véritable levier de développement",
         paragraphs: [
-          "Le dispositif des Certificats d’Économies d’Énergie représente une opportunité pour les professionnels du bâtiment souhaitant proposer des solutions plus compétitives à leurs clients.",
+          "Le dispositif des certificats d’économies d’énergie représente une opportunité pour les professionnels du bâtiment souhaitant proposer des solutions plus compétitives à leurs clients.",
           "En collaborant avec ECO INGENIERIE, vous pouvez :",
         ],
         bullets: [
@@ -92,7 +92,7 @@ export const solutionRichContent: Record<
       {
         title: "Pourquoi préfinancer ?",
         paragraphs: [
-          "Le dispositif des Certificats d’Économies d’Énergie (CEE) permet de financer une partie des travaux visant à réduire les consommations énergétiques des entreprises, des collectivités et des gestionnaires de bâtiments.",
+          "Le dispositif des certificats d’économies d’énergie (CEE) permet de financer une partie des travaux visant à réduire les consommations énergétiques des entreprises, des collectivités et des gestionnaires de bâtiments.",
           "Cependant, le versement des primes CEE intervient généralement après la réalisation des travaux et la validation du dossier administratif. Afin de faciliter le lancement des projets, certains acteurs du dispositif proposent des solutions de préfinancement des aides CEE.",
         ],
       },
@@ -107,7 +107,7 @@ export const solutionRichContent: Record<
       {
         title: "Un accompagnement financier pour accélérer vos projets",
         paragraphs: [
-          "En tant que mandataire CEE, ECO INGENIERIE accompagne les porteurs de projets dans la valorisation de leurs Certificats d’Économies d’Énergie et peut proposer des solutions adaptées pour faciliter le financement des opérations éligibles.",
+          "En tant que mandataire CEE, ECO INGENIERIE accompagne les porteurs de projets dans la valorisation de leurs certificats d’économies d’énergie et peut proposer des solutions adaptées pour faciliter le financement des opérations éligibles.",
           "Notre accompagnement permet notamment de :",
         ],
         bullets: [
