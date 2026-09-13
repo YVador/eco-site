@@ -13,10 +13,6 @@ const steps = [
       { value: "installateurs-artisans", label: "Artisans / installateurs" },
       { value: "gestionnaires-batiments", label: "Bâtiments tertiaire ou industriel" },
       { value: "collectivites", label: "Mairie ou collectivités" },
-      { value: "entreprises-emettrices", label: "Entreprise émettrice" },
-      { value: "fournisseurs-energie", label: "Fournisseur d’énergie" },
-      { value: "bailleurs-sociaux", label: "Bailleur social" },
-      { value: "particuliers", label: "Particulier" },
     ],
   },
   {

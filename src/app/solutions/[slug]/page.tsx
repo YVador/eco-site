@@ -60,9 +60,6 @@ export default async function SolutionPage({ params }: Props) {
               <Link href="/contact" className="btn btn-cta">
                 Un expert vous rappelle
               </Link>
-              <Link href="/demande" className="btn btn-ghost">
-                Orienter ma demande
-              </Link>
             </div>
             <ul className="mt-8 grid gap-2 text-sm text-text-muted sm:grid-cols-2">
               <li>✓ Mandataire CEE</li>

@@ -16,19 +16,6 @@ export function Footer() {
             Transition énergétique, conformité et primes accélérées pour vos
             dossiers CEE.
           </p>
-          <div className="mt-6 flex flex-wrap gap-2">
-            {site.socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-[var(--radius-sm)] border border-white/15 px-4 py-2 text-xs font-medium text-white/70 transition hover:border-lime hover:text-lime"
-              >
-                {s.label}
-              </a>
-            ))}
-          </div>
           <div className="mt-8 flex flex-wrap gap-2">
             {certs.map((c) => (
               <span
@@ -51,12 +38,7 @@ export function Footer() {
             </li>
             <li>
               <Link href="/guides" className="transition hover:text-cta">
-                Comprendre les CEE
-              </Link>
-            </li>
-            <li>
-              <Link href="/fiches-cee" className="transition hover:text-cta">
-                Fiches CEE
+                Prime CEE
               </Link>
             </li>
             <li>

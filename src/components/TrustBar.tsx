@@ -76,12 +76,12 @@ export function ProofStrip({ compact = false }: ProofStripProps) {
               Pourquoi nous faire confiance
             </p>
             <h2 className="mt-3 max-w-xl font-display text-3xl md:text-4xl lg:text-[2.75rem]">
-              Des preuves concrètes, pas des promesses floues.
+              Des preuves concrètes
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-white/55 md:text-right">
             Mandataire CEE — contrôle documentaire, suivi dédié, primes
-            traitées sans friction.
+            traitées
           </p>
         </div>
 

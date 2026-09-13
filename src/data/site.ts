@@ -9,17 +9,6 @@ export const site = {
   address: "122 Avenue des Champs-Elysées, 75008 Paris",
   hours: "8h – 18h",
   url: "https://eco-ingenierie.fr",
-  socials: [
-    // À remplacer par les URLs exactes du compte ECO INGENIERIE quand confirmées
-    {
-      label: "Facebook",
-      href: "https://www.facebook.com/search/top?q=ECO%20INGENIERIE",
-    },
-    {
-      label: "YouTube",
-      href: "https://www.youtube.com/results?search_query=ECO+INGENIERIE",
-    },
-  ],
 } as const;
 
 export const trustItems = [
@@ -114,25 +103,14 @@ export const mainNav = [
       { href: "/coup-de-pouce", label: "Coup de pouce" },
       { href: "/solutions/mandat-financier", label: "Préfinancement" },
       {
-        href: "/solutions/accompagnement-administratif",
-        label: "Gestion des dossiers CEE",
-      },
-      {
         href: "/solutions/verification-documentaire",
         label: "Contrôle et conformité",
-      },
-      {
-        href: "/outils-digitaux",
-        label: "Outils digitaux : Pixel IQ et Certificall",
       },
     ],
   },
   {
     label: "CEE",
-    children: [
-      { href: "/fiches-cee", label: "Fiches CEE" },
-      { href: "/guides", label: "Comprendre les CEE" },
-    ],
+    children: [{ href: "/guides", label: "Prime CEE" }],
   },
   {
     label: "Vous êtes ?",
@@ -295,7 +273,7 @@ export const timeline = [
     step: "05",
     title: "Versement de la prime",
     tag: "Prime",
-    text: "Une fois la demande traitée, nous procédons au versement rapide de la prime CEE — avec préfinancement possible selon le mandat.",
+    text: "Une fois la demande traitée, nous procédons au versement rapide de la prime CEE — avec préfinancement possible.",
     metric: "Rapide",
     metricLabel: "Paiement de la prime",
     image: "/media/step-05.jpg",
@@ -325,12 +303,12 @@ export const comparisonRows = [
   },
   {
     label: "Préfinancement",
-    withUs: "Mandat financier possible",
+    withUs: "Avance de prime CEE possible",
     withoutUs: "Avance de frais à votre charge",
   },
   {
     label: "Veille réglementaire",
-    withUs: "Incluse",
+    withUs: "Newsletters réguliers",
     withoutUs: "À rechercher et à votre charge",
   },
 ] as const;

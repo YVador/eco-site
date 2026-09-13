@@ -83,10 +83,6 @@ export default function ContactPage() {
                 <option>Artisan / installateur</option>
                 <option>Bâtiment tertiaire ou industriel</option>
                 <option>Mairie ou collectivité</option>
-                <option>Producteur énergie</option>
-                <option>Émetteur</option>
-                <option>Bailleur social</option>
-                <option>Particulier</option>
                 <option>Autre</option>
               </select>
             </div>

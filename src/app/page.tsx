@@ -5,12 +5,9 @@ import { FinancedWorks } from "@/components/FinancedWorks";
 import {
   IconBadge,
   IconCheck,
-  IconEv,
   IconShield,
-  IconSolar,
   IconSupport,
   IconTruck,
-  IconVan,
 } from "@/components/Icons";
 import { MethodSteps } from "@/components/MethodSteps";
 import { ProofStrip } from "@/components/TrustBar";
@@ -26,17 +23,6 @@ import {
   site,
   testimonials,
 } from "@/data/site";
-
-const audienceIcons = {
-  van: IconVan,
-  boat: IconSolar,
-  solar: IconSolar,
-  ev: IconEv,
-  portable: IconSupport,
-  badge: IconBadge,
-  shield: IconShield,
-  check: IconCheck,
-};
 
 const whyItems = [
   {
@@ -118,9 +104,9 @@ export default function HomePage() {
             Vous réalisez les travaux. Nous valorisons vos primes CEE.
           </h1>
           <p className="fade-up-delay-2 mt-7 max-w-xl text-base leading-relaxed text-white/88 md:text-xl">
-            Mandataire CEE, ECO INGENIERIE accompagne les installateurs, les
-            mairies ou les collectivités dans la gestion, la conformité et la
-            valorisation de leurs dossiers CEE.
+            ECO INGENIERIE accompagne les installateurs, les mairies ou les
+            collectivités dans la gestion, la conformité et la valorisation de
+            leurs dossiers CEE.
           </p>
           <ul className="fade-up-delay-2 mt-8 flex flex-col gap-2.5 text-sm font-medium text-white/90 sm:flex-row sm:flex-wrap sm:gap-x-8">
             <li className="flex items-center gap-2">
@@ -166,7 +152,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-text-muted">
                 En tant qu’intermédiaire privilégié, nous facilitons la mise en
-                relation entre les émetteurs et ceux qui souhaitent entreprendre
+                relation entre les obligés et ceux qui souhaitent entreprendre
                 des projets éco-responsables.
               </p>
               <p className="mt-4 text-text-muted">
@@ -218,7 +204,6 @@ export default function HomePage() {
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {navAudiences.map((slug, i) => {
               const audience = audiences.find((a) => a.slug === slug)!;
-              const Icon = audienceIcons[audience.icon] ?? IconCheck;
               return (
                 <Reveal key={audience.slug} delay={i * 60}>
                   <Link
@@ -234,9 +219,6 @@ export default function HomePage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-bg-inverse via-bg-inverse/45 to-bg-inverse/10" />
                     <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-7">
-                      <span className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-[var(--radius)] bg-white/10 text-lime backdrop-blur-sm">
-                        <Icon className="h-5 w-5" />
-                      </span>
                       <h3 className="font-display text-2xl md:text-3xl">
                         {audience.title}
                       </h3>
@@ -289,20 +271,23 @@ export default function HomePage() {
               de vos CEE.
             </p>
           </Reveal>
-          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {whyItems.map((item, i) => (
-              <Reveal key={item.title} delay={i * 50}>
-                <div className="card-surface h-full p-6">
-                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-[var(--radius-sm)] bg-accent/10 text-accent">
-                    <item.icon className="h-6 w-6" />
-                  </span>
-                  <h3 className="mt-5 font-display text-xl">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-text-muted">
-                    {item.text}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
+          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+            {whyItems.map((item, i) => {
+              const span = i < 3 ? "lg:col-span-2" : "lg:col-span-3";
+              return (
+                <Reveal key={item.title} delay={i * 50} className={span}>
+                  <div className="card-surface h-full p-6">
+                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-[var(--radius-sm)] bg-accent/10 text-accent">
+                      <item.icon className="h-6 w-6" />
+                    </span>
+                    <h3 className="mt-5 font-display text-xl">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-text-muted">
+                      {item.text}
+                    </p>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
           <Reveal>
             <Link href="/qui-sommes-nous" className="btn btn-primary mt-12">
@@ -365,7 +350,6 @@ export default function HomePage() {
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-text-muted">
               Un seul interlocuteur, cinq étapes, un dossier sécurisé.
-              Choisissez une étape pour découvrir ce qu’elle recouvre.
             </p>
           </Reveal>
           <Reveal delay={80}>
