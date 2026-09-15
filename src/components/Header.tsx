@@ -67,6 +67,9 @@ export function Header() {
           <Logo
             height={54}
             priority
+            src={
+              solid ? "/logo.png" : "/media/logo_blanc_eco_inge.png"
+            }
             className={`max-h-[3.4rem] transition ${
               solid ? "" : "drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)]"
             }`}
