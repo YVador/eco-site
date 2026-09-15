@@ -46,7 +46,7 @@ export function Header() {
   }, [open]);
 
   const linkIdle = solid
-    ? "text-text-muted hover:text-text"
+    ? "text-text hover:text-text"
     : "!text-white/85 hover:!text-white";
   const linkActive = solid ? "text-text" : "!text-white";
 
