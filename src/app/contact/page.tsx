@@ -17,7 +17,7 @@ export default function ContactPage() {
             Envoyez une demande d’informations
           </h1>
           <p className="mt-4 text-text-muted">
-            Notre équipe vous recontacte pour avancer sur votre dossier CEE.
+            Notre équipe vous recontactera pour avancer sur votre dossier CEE.
           </p>
           <dl className="mt-8 space-y-3 text-sm">
             <div>
