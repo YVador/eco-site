@@ -160,7 +160,7 @@ export default function HomePage() {
               <p className="mt-5 text-lg leading-relaxed text-text-muted">
                 ECO INGENIERIE accompagne les installateurs et collectivités dans le montage, 
                 le contrôle et le dépôt de leurs dossiers. Notre rôle : simplifier vos démarches, 
-                sécuriser vos opérations et vous permettre de bénéficier d’une valorisation compétitive de vos primes CEE.              
+                sécuriser vos opérations et vous permettre de bénéficier d’une valorisation compétitive de vos primes CEE.               
               </p>
               <p className="mt-4 text-text-muted">
                 Notre expertise de 5 ans dans le secteur des CEE couvre les
