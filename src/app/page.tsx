@@ -101,11 +101,12 @@ export default function HomePage() {
 
         <div className="container-site relative flex min-h-svh flex-col justify-center py-20 pt-28 md:py-28 md:pt-32">
           <h1 className="fade-up max-w-[24ch] font-display text-[2.4rem] leading-[0.98] md:text-4xl lg:text-[3.15rem]">
-            Vous réalisez les travaux. 
+            Vous réalisez les travaux.
+            <br />
             Nous valorisons vos primes CEE.
           </h1>
           <p className="fade-up-delay-2 mt-7 max-w-3xl text-base leading-relaxed text-white/88 md:text-xl">
-            ECO INGENIERIE accompagne les installateurs, les mairies ou les collectivités dans le montage, la conformité et le dépôt de leurs dossiers CEE. Nous vous aidons 
+            ECO INGENIERIE accompagne les installateurs et les collectivités dans le montage, la conformité et le dépôt de leurs dossiers CEE. Nous vous aidons 
             à sécuriser vos dossiers et à bénéficier d'une valorisation compétitive de vos primes.
           </p>
           <ul className="fade-up-delay-2 mt-8 flex flex-col gap-2.5 text-sm font-medium text-white/90 sm:flex-row sm:flex-wrap sm:gap-x-8">
