@@ -271,7 +271,7 @@ export default function HomePage() {
           <Reveal>
             <p className="eyebrow">Confiance</p>
             <h2 className="mt-3 max-w-2xl font-display text-4xl md:text-5xl lg:text-6xl">
-              Un partenaire unique pour une gestion complète
+              Un partenaire pour une gestion complète
             </h2>
             <p className="mt-5 max-w-xl text-lg text-text-muted">
               Partenaire clé de la transition énergétique et de la valorisation
