@@ -113,7 +113,13 @@ export default function HomePage() {
               <span className="text-cta">✓</span> Mandataire CEE
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-cta">✓</span> Paiement rapide des primes
+              <span className="text-cta">✓</span> Préfinancement des primes
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-cta">✓</span> Montage et conformité des dossiers
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-cta">✓</span> Valorisation compétitive
             </li>
           </ul>
           <div className="fade-up-delay-3 mt-12 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
