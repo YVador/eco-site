@@ -153,7 +153,7 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={80}>
             <div>
-              <p className="eyebrow">Qui sommes-nous ?</p>
+              <p className="eyebrow">Qui sommes-nous</p>
               <h2 className="mt-3 font-display text-3xl md:text-5xl">
               Votre partenaire CEE, de la réalisation des travaux au versement de la prime
               </h2>
