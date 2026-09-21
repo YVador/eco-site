@@ -106,8 +106,9 @@ export default function HomePage() {
             Nous valorisons vos primes CEE.
           </h1>
           <p className="fade-up-delay-2 mt-7 max-w-3xl text-base leading-relaxed text-white/88 md:text-xl">
-            ECO INGENIERIE accompagne les installateurs et les collectivités dans le montage, la conformité et le dépôt de leurs dossiers CEE. Nous vous aidons 
-            à sécuriser vos dossiers et à bénéficier d'une valorisation compétitive de vos primes.
+            ECO INGENIERIE accompagne les installateurs et les collectivités dans le montage,   
+            <br /> 
+            la conformité et le dépôt de leurs dossiers CEE. Nous vous aidons à sécuriser vos dossiers et à bénéficier d'une valorisation compétitive de vos primes.
           </p>
           <ul className="fade-up-delay-2 mt-8 flex flex-col gap-2.5 text-sm font-medium text-white/90 sm:flex-row sm:flex-wrap sm:gap-x-8">
             <li className="flex items-center gap-2">
