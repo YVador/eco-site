@@ -105,7 +105,7 @@ export default function HomePage() {
           </h1>
           <p className="fade-up-delay-2 mt-7 max-w-xl text-base leading-relaxed text-white/88 md:text-xl">
             ECO INGENIERIE accompagne les installateurs, les mairies ou les collectivités dans le montage, la conformité et le dépôt de leurs dossiers CEE. Nous vous aidons 
-            à sécuriser vos dossiers et à bénéficier d'une valorisation compétitive de vos primes, avec des solutions de préfinancement.
+            à sécuriser vos dossiers et à bénéficier d'une valorisation compétitive de vos primes.
           </p>
           <ul className="fade-up-delay-2 mt-8 flex flex-col gap-2.5 text-sm font-medium text-white/90 sm:flex-row sm:flex-wrap sm:gap-x-8">
             <li className="flex items-center gap-2">
