@@ -158,7 +158,7 @@ export default function HomePage() {
               Votre partenaire CEE, de la réalisation des travaux au versement de la prime
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-text-muted">
-                ECO INGENIERIE accompagne les installateurs, entreprises et collectivités dans le montage, 
+                ECO INGENIERIE accompagne les installateurs et collectivités dans le montage, 
                 le contrôle et le dépôt de leurs dossiers. Notre rôle : simplifier vos démarches, 
                 sécuriser vos opérations et vous permettre de bénéficier d’une valorisation compétitive de vos primes CEE.              
               </p>
