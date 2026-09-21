@@ -155,25 +155,24 @@ export default function HomePage() {
             <div>
               <p className="eyebrow">Qui sommes-nous ?</p>
               <h2 className="mt-3 font-display text-3xl md:text-5xl">
-                Partenaire clé dans la transition énergétique et la valorisation
-                de vos CEE
+              Votre partenaire CEE, de la réalisation des travaux au versement de la prime
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-text-muted">
-                En tant qu’intermédiaire privilégié, nous facilitons la mise en
-                relation entre les obligés et ceux qui souhaitent entreprendre
-                des projets éco-responsables.
+                ECO INGENIERIE accompagne les installateurs, entreprises et collectivités dans le montage, 
+                le contrôle et le dépôt de leurs dossiers. Notre rôle : simplifier vos démarches, 
+                sécuriser vos opérations et vous permettre de bénéficier d’une valorisation compétitive de vos primes CEE.              
               </p>
               <p className="mt-4 text-text-muted">
                 Notre expertise de 5 ans dans le secteur des CEE couvre les
                 demandes du conseil à la mise en œuvre — pour une expérience
-                fluide et efficace. Prise en charge simplifiée et rapide avec
-                notre offre clé en main.
+                fluide et efficace. De la constitution du dossier jusqu’à son financement, 
+                vous bénéficiez d’un accompagnement personnalisé et d’un interlocuteur unique.
               </p>
               <ul className="mt-6 space-y-2.5 text-sm font-medium">
                 {[
-                  "Conformité de vos pièces justificatives",
-                  "Mandataire administratif et financier",
-                  "Vérification documentaire rigoureuse",
+                  "Montage et suivi de vos dossiers CEE",
+                  "Contrôle et sécurisation des pièces justificatives",
+                  "Préfinancement et valorisation de vos primes",
                 ].map((item) => (
                   <li key={item} className="flex gap-2.5">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 bg-accent" />
