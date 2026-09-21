@@ -143,7 +143,7 @@ export default function HomePage() {
           <Reveal>
             <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius-lg)] bg-bg-muted md:aspect-[4/3]">
               <Image
-                src="/media/atelier.jpg"
+                src="/media/batiment1.png"
                 alt="ECO INGENIERIE — partenaire de la transition énergétique"
                 fill
                 className="object-cover"
