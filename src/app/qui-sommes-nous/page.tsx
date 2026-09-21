@@ -51,7 +51,7 @@ export default function QuiSommesNousPage() {
     <>
       <section className="section">
         <div className="container-site">
-          <p className="eyebrow">Notre rôle</p>
+          <p className="eyebrow">Notre rôle.</p>
           <h1 className="mt-3 max-w-3xl font-display text-3xl md:text-5xl">
             Une société dédiée au traitement accéléré de vos dossiers CEE
           </h1>
