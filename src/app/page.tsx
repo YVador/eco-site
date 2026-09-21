@@ -164,9 +164,9 @@ export default function HomePage() {
               </p>
               <p className="mt-4 text-text-muted">
                 Notre expertise de 5 ans dans le secteur des CEE couvre les
-                demandes du conseil à la mise en œuvre — pour une expérience
-                fluide et efficace. De la constitution du dossier jusqu’à son financement, 
-                vous bénéficiez d’un accompagnement personnalisé et d’un interlocuteur unique.
+                demandes du conseil à la mise en œuvre, pour une expérience
+                efficace. De la constitution du dossier jusqu’à son financement, 
+                vous bénéficiez de notre expertise, d’un accompagnement personnalisé et d’un interlocuteur unique.
               </p>
               <ul className="mt-6 space-y-2.5 text-sm font-medium">
                 {[
