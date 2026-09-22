@@ -101,7 +101,7 @@ export default function HomePage() {
 
         <div className="container-site relative flex min-h-svh flex-col justify-center py-20 pt-28 md:py-28 md:pt-32">
           <h1 className="fade-up max-w-[24ch] font-display text-[2.4rem] leading-[0.98] md:text-4xl lg:text-[3.15rem]">
-            Vous réalisez les travaux.
+            Vous réalisez les travaux
             <br />
             Nous valorisons vos primes CEE.
           </h1>
