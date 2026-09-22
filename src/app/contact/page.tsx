@@ -14,7 +14,7 @@ export default function ContactPage() {
         <div>
           <p className="eyebrow">Contact</p>
           <h1 className="mt-2 font-display text-4xl md:text-6xl">
-            Envoyez une demande d’informations
+            Envoyez une demande d’information
           </h1>
           <p className="mt-4 text-text-muted">
             Notre équipe vous recontacte pour avancer sur votre dossier CEE.
