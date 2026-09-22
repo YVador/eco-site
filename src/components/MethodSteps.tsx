@@ -39,17 +39,19 @@ export function MethodSteps() {
                     : "hover:bg-surface/80"
                 }`}
               >
-                <span
-                  className={`flex items-center justify-center rounded-full text-xs font-bold tabular-nums transition ${
-                    isActive
-                      ? "h-12 w-12 scale-110 bg-cta text-white shadow-[0_8px_24px_rgb(16_96_176_/_0.35)] ring-4 ring-cta/20"
-                      : isDone
-                        ? "h-10 w-10 bg-accent text-white ring-4 ring-bg-muted"
-                        : "h-10 w-10 bg-surface text-text-muted ring-4 ring-bg-muted group-hover:bg-cta/15 group-hover:text-cta"
-                  }`}
-                >
-                  {item.step}
-                </span>
+<span
+  className={`flex items-center justify-center rounded-full text-xs font-bold tabular-nums transition ${
+    item.step === 5
+      ? "h-10 w-10 bg-lime text-white ring-4 ring-bg-muted"
+      : isActive
+        ? "h-12 w-12 scale-110 bg-cta text-white shadow-[0_8px_24px_rgb(16_96_176_/_0.35)] ring-4 ring-cta/20"
+        : isDone
+          ? "h-10 w-10 bg-accent text-white ring-4 ring-bg-muted"
+          : "h-10 w-10 bg-surface text-text-muted ring-4 ring-bg-muted group-hover:bg-cta/15 group-hover:text-cta"
+  }`}
+>
+  {item.step}
+</span>
                 <span
                   className={`mt-3 block text-[0.65rem] font-semibold tracking-[0.12em] uppercase ${
                     isActive ? "text-cta" : "text-text-muted/70"
