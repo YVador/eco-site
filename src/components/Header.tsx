@@ -82,14 +82,16 @@ export function Header() {
           aria-label="Principale"
         >
           {mainNav.map((group) => {
-            if ("href" in group) {
+            if ("href" in group || group.label === "CEE") {
+              const href = "href" in group ? group.href : "/guides";
+              const label = "href" in group ? group.label : "Prime CEE";
               return (
                 <Link
-                  key={group.href}
-                  href={group.href}
+                  key={href}
+                  href={href}
                   className={`rounded-[var(--radius-sm)] px-3 py-2 text-sm font-medium transition ${linkIdle}`}
                 >
-                  {group.label}
+                  {label}
                 </Link>
               );
             }
@@ -199,15 +201,17 @@ export function Header() {
             aria-label="Mobile"
           >
             {mainNav.map((group) => {
-              if ("href" in group) {
+              if ("href" in group || group.label === "CEE") {
+                const href = "href" in group ? group.href : "/guides";
+                const label = "href" in group ? group.label : "Prime CEE";
                 return (
                   <Link
-                    key={group.href}
-                    href={group.href}
+                    key={href}
+                    href={href}
                     className="py-3 text-base font-medium"
                     onClick={() => setOpen(false)}
                   >
-                    {group.label}
+                    {label}
                   </Link>
                 );
               }
