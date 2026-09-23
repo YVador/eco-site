@@ -82,6 +82,18 @@ export function Header() {
           aria-label="Principale"
         >
           {mainNav.map((group) => {
+            if ("href" in group) {
+              return (
+                <Link
+                  key={group.href}
+                  href={group.href}
+                  className={`rounded-[var(--radius-sm)] px-3 py-2 text-sm font-medium transition ${linkIdle}`}
+                >
+                  {group.label}
+                </Link>
+              );
+            }
+
             const isOpen = desktopOpen === group.label;
             return (
               <div key={group.label} className="relative">
@@ -187,6 +199,19 @@ export function Header() {
             aria-label="Mobile"
           >
             {mainNav.map((group) => {
+              if ("href" in group) {
+                return (
+                  <Link
+                    key={group.href}
+                    href={group.href}
+                    className="py-3 text-base font-medium"
+                    onClick={() => setOpen(false)}
+                  >
+                    {group.label}
+                  </Link>
+                );
+              }
+
               const isOpen = mobileOpen === group.label;
               return (
                 <div
